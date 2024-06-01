@@ -1,5 +1,6 @@
 "use client";
 import { LucideMenu } from "lucide-react";
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
 const Navbar2 = () => {
@@ -20,14 +21,16 @@ const Navbar2 = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       if (scrollPosition > 0) {
-        
         setIsScrolled(true);
         // Store the scroll position in localStorage
-        window.localStorage.setItem("scrollPosition", scrollPosition.toString());
+        window.localStorage.setItem(
+          "scrollPosition",
+          scrollPosition.toString()
+        );
       } else {
         // Inherit the color from the hero section
         setIsScrolled(false);
-        // remove sthe scroll position in localStorage
+        // Remove the scroll position in localStorage
         window.localStorage.removeItem("scrollPosition");
       }
     };
@@ -49,43 +52,53 @@ const Navbar2 = () => {
     };
   }, []);
 
+  // Array of navigation items
+  const navItems = [
+    { href: "/", label: "Home" },
+    { href: "/services", label: "Services" },
+    { href: "/about", label: "About" },
+    { href: "/contact", label: "Contact" },
+  ];
+
   return (
     <header
-      className={`fixed w-full flex justify-between items-center px-4 md:px-12 transition-all duration-300 z-10 ${
-        isScrolled ? "h-16 bg-gray-200" : "h-20 bg-transparent"
+      className={`fixed w-full flex justify-between items-center px-4 md:px-12 transition-all duration-300 z-50 ${
+        isScrolled ? "h-20 bg-white" : "h-20 bg-transparent text-white"
       }`}
     >
-      {/* Logo   use logo image instead of text and then apply the shrinkage on it when scroll */}
-      <h1 className={`font-extrabold  ${isScrolled ? 'text-xl' : 'text-2xl'}`}><span className=" text-green-500">TATA</span> <span className=" text-orange-400">TRAILER</span></h1>
-
+      {/* Logo */}
+      <Link href="/">
+        <h1
+          className={`font-extrabold  ${isScrolled ? "text-xl" : "text-2xl"}`}
+        >
+          <span className=" text-green-500">TATA</span>{" "}
+          <span className=" text-orange-400">TRAILER</span>
+        </h1>
+      </Link>
       {/* Navigation */}
-      <nav>
+      <nav className="relative">
         {/* Mobile menu toggle button */}
-        <button onClick={handleClick} className="h-8 w-8 md:hidden">
+        <button onClick={handleClick} className="h-8 w-8 pr-16 md:hidden">
           <LucideMenu />
         </button>
 
         {/* Navigation links */}
         <ul
-          className={`fixed bg-white left-0 right-0 min-h-screen space-y-4 p-4 transform transition-transform duration-300 ${
-            open ? "-translate-x-0" : "-translate-x-full"
-          } md:relative md:bg-inherit md:flex md:min-h-0 md:space-y-0 md:space-x-6 md:p-0 md:translate-x-0`}
+          className={`fixed bg-teal-200/20 backdrop-blur-md left-0 right-0 min-h-screen flex flex-col justify-center items-center space-y-4 p-4 transform transition-transform duration-300 ${
+            open ? "translate-x-0" : "-translate-x-full"
+          } md:relative md:bg-transparent md:backdrop-blur-0 md:flex md:flex-row md:min-h-0 md:space-y-0 md:space-x-6 md:p-0 md:translate-x-0 text-lg`}
         >
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Features</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
-          </li>
+          {navItems.map((item, index) => (
+            <li key={index}>
+              <Link href={item.href} className="hover:text-orange-500 hover:shadow-md font-mono">
+                {item.label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
   );
 };
+
 export default Navbar2;
