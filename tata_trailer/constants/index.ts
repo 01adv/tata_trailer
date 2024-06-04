@@ -27,7 +27,7 @@ export const testimonials = [
   {
     title: "Innovative and Dependable",
     content:
-      "Their innovative solutions and dependable service have been instrumental in our company's growth.",
+      "Their innovative solutions and dependable service have been instrumental in our company growth.",
     name: "Emily Davis",
     designation: "COO at Tech Distributors Ltd.",
   },
