@@ -30,9 +30,9 @@ export function CarouselSpacing() {
 
   return (
     <Carousel className="w-full max-w-sm md:max-w-full lg:max-w-full">
-      <CarouselContent className="-ml-1">{cardItems}</CarouselContent>
-      <CarouselPrevious className="hidden sm:flex"/>
-      <CarouselNext className="hidden sm:flex"/>
+      <CarouselContent className="-ml-1 pb-5 sm:pb-10">{cardItems}</CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext/>
     </Carousel>
   );
 }
@@ -56,9 +56,11 @@ const Portfolio = () => {
         <CarouselSpacing />
       </div>
       <div className="flex items-center justify-center mt-8">
-        <Link href={'/'}><Button>View All</Button></Link>
+        <Link href={"/"}>
+          <Button>View All</Button>
+        </Link>
       </div>
-    </div> 
+    </div>
   );
 };
 

@@ -18,6 +18,11 @@ const Navbar2 = () => {
     setOpen(!open);
   };
 
+  // Function to handle link click and close the menu
+  const handleLinkClick = () => {
+    setOpen(false);
+  };
+
   // Effect to handle scroll events and persist scroll position
   useEffect(() => {
     // Function to handle scroll events
@@ -60,14 +65,14 @@ const Navbar2 = () => {
   return (
     <header
       className={`fixed w-full flex justify-between items-center px-4 md:px-12 transition-all duration-300 z-50 ${
-        isScrolled ? "h-16 glassmorphism-nav bg-green-200" : "h-20 bg-transparent text-white"
+        isScrolled
+          ? "h-16 glassmorphism-nav bg-green-200"
+          : "h-20 bg-transparent text-white"
       }`}
     >
       {/* Logo */}
       <Link href="/">
-        <h1
-          className={`font-extrabold  ${isScrolled ? "text-xl" : "text-2xl"}`}
-        >
+        <h1 className={`font-extrabold ${isScrolled ? "text-xl" : "text-2xl"}`}>
           <span className=" text-green-500">TATA</span>{" "}
           <span className=" text-orange-400">TRAILER</span>
         </h1>
@@ -75,27 +80,30 @@ const Navbar2 = () => {
       {/* Navigation */}
       <nav className="relative">
         {/* Mobile menu toggle button */}
-        <button aria-label="menu" onClick={handleClick} className="h-8 w-8 pr-8 md:hidden">
+        <button
+          aria-label="menu"
+          onClick={handleClick}
+          className="h-8 w-8 pr-8 md:hidden"
+        >
           <LucideMenu />
         </button>
-
-        {/* Navigation links */}
         <ul
-          className={`fixed left-0 right-0 min-h-screen flex flex-col justify-center items-center space-y-4 p-4 transform transition-transform duration-300 ${
-            open ? "translate-x-0" : "-translate-x-full"
-          } md:relative  md:flex md:flex-row md:min-h-0 md:space-y-0 md:space-x-6 md:p-0 md:translate-x-0 text-lg`}
+          className={`fixed left-0 right-0 min-h-screen flex flex-col justify-start items-start space-y-4 p-4 transform transition-transform duration-300 ${
+            open ? "translate-x-0 glassmorphism-nav" : "-translate-x-full"
+          } md:relative md:flex md:flex-row md:min-h-0 md:space-y-0 md:space-x-6 md:p-0 md:translate-x-0 text-lg`}
         >
           {navItems.map((item, index) => {
             const isActive =
               pathName === item.href || pathName.startsWith(`${item.href}/`);
             return (
-              <li key={index}>
+              <li key={index} className="w-full md:w-auto">
                 <Link
                   href={item.href}
                   className={cn(
-                    "hover:text-orange-500 hover:shadow-md font-mono font-semibold",
-                    { "border-b-2 shadow-md border-orange-500": isActive }
+                    "block w-full py-2 px-4 hover:text-orange-500 hover:shadow-md font-mono font-semibold",
+                    { "md:border-b-2 md:shadow-md md:border-orange-500": isActive }
                   )}
+                  onClick={handleLinkClick}
                 >
                   {item.label}
                 </Link>

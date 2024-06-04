@@ -64,7 +64,7 @@ export function CarouselSpacing({ serviceData }: any) {
 
   return (
     <Carousel className="w-full max-w-sm md:max-w-full lg:max-w-full">
-      <CarouselContent className="-ml-1">{cardItems}</CarouselContent>
+      <CarouselContent className="-ml-1 pb-5 sm:pb-10">{cardItems}</CarouselContent>
       <CarouselPrevious className="hidden sm:flex" />
       <CarouselNext className="hidden sm:flex"/>
     </Carousel>

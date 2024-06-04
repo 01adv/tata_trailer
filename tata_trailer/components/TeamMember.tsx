@@ -119,7 +119,7 @@ const TeamMemberCard = ({ member }: any) => (
 
 const CarouselDemo = ({ teamMembers }: any) => (
   <Carousel className="w-full max-w-xs">
-    <CarouselContent>
+    <CarouselContent className="pb-5 sm:pb-10">
       {teamMembers.map((member: any, index: any) => (
         <CarouselItem key={index}>
           <div className="p-1">
