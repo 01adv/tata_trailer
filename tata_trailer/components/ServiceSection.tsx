@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import Image from "next/image";
 import { servicesData } from "@/constants";
 
 const ServiceSection: React.FC = () => {
@@ -17,20 +18,22 @@ const ServiceSection: React.FC = () => {
       {servicesData.map((service, index) => (
         <div
           key={index}
-          className={`flex flex-col-reverse lg:flex-row ${index % 2 === 0 ? "lg:flex-row-reverse" : ""} items-center lg:items-start mx-auto max-w-7xl gap-8 px-8`}
+          className={`flex flex-col-reverse lg:flex-row ${
+            index % 2 === 0 ? "lg:flex-row-reverse" : ""
+          } items-center lg:items-start mx-auto max-w-7xl gap-8 px-8`}
         >
           <div className="flex-1 max-w-xl px-6 lg:py-16">
             <div className="flex items-center space-x-4">
-              <span className={`flex h-12 w-12 items-center justify-center rounded-xl ${service.bgColor}`}>
+              <span
+                className={`flex h-12 w-12 items-center justify-center rounded-xl ${service.bgColor}`}
+              >
                 <service.icon size={40} />
               </span>
               <h2 className="text-3xl font-bold tracking-tight text-gray-800">
                 {service.title}
               </h2>
             </div>
-            <p className="mt-4 text-lg text-gray-600">
-              {service.description}
-            </p>
+            <p className="mt-4 text-lg text-gray-600">{service.description}</p>
             <div className="mt-6">
               <Link href={service.btnLink}>
                 <Button>{service.btnText}</Button>
@@ -38,12 +41,18 @@ const ServiceSection: React.FC = () => {
             </div>
           </div>
           <div className="flex-1">
-            <img
-              loading="lazy"
-              className="w-full rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5"
-              src={service.imgSrc}
-              alt={service.imgAlt}
-            />
+            <div className="w-full relative rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 overflow-hidden">
+              <Image
+                loading="lazy"
+                className="rounded-xl"
+                src={service.imgSrc}
+                alt={service.imgAlt}
+                layout="responsive"
+                width={700}
+                height={475}
+                objectFit="cover"
+              />
+            </div>
           </div>
         </div>
       ))}

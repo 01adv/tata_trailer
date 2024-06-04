@@ -46,8 +46,9 @@ const AboutComp = () => {
                 About Us
               </span>
               <h2 className="font-serif mb-3 md:mb-5 text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-yellow-500 to-green-500">
-                India's Leading Contract Logistics Provider
+                India&apos;s Leading Contract Logistics Provider
               </h2>
+
               <p className="mb-4 text-base text-body-color dark:text-dark-6">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
@@ -69,7 +70,6 @@ const AboutComp = () => {
                 matches your business.
               </p>
               <Link href={"/about"}>
-                {" "}
                 <Button>Know More</Button>
               </Link>
             </div>
