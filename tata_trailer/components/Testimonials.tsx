@@ -1,36 +1,7 @@
+import { testimonials } from "@/constants";
 import React from "react";
 
 const Testimonials = () => {
-  const testimonials = [
-    {
-      title: "Outstanding Service and Reliability",
-      content:
-        "Tata Trailer Logistics has provided us with unparalleled service, ensuring our goods are delivered on time, every time.",
-      name: "John Doe",
-      designation: "Operations Manager at XYZ Manufacturing",
-    },
-    {
-      title: "Exceptional Efficiency",
-      content:
-        "The efficiency and professionalism of Tata Trailer Logistics have significantly improved our supply chain operations.",
-      name: "Jane Smith",
-      designation: "Supply Chain Director at ABC Retail",
-    },
-    {
-      title: "Reliable and Cost-Effective",
-      content:
-        "Tata Trailer Logistics offers reliable and cost-effective solutions, making them our preferred logistics partner.",
-      name: "Michael Brown",
-      designation: "CEO at Global Logistics Inc.",
-    },
-    {
-      title: "Innovative and Dependable",
-      content:
-        "Their innovative solutions and dependable service have been instrumental in our company's growth.",
-      name: "Emily Davis",
-      designation: "COO at Tech Distributors Ltd.",
-    },
-  ];
 
   return (
     <div className="">

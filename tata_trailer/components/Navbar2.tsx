@@ -1,6 +1,9 @@
 "use client";
+import { navItems } from "@/constants";
+import { cn } from "@/lib/utils";
 import { LucideMenu } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { useState, useEffect } from "react";
 
 const Navbar2 = () => {
@@ -52,18 +55,12 @@ const Navbar2 = () => {
     };
   }, []);
 
-  // Array of navigation items
-  const navItems = [
-    { href: "/", label: "Home" },
-    { href: "/services", label: "Services" },
-    { href: "/about", label: "About" },
-    { href: "/contact", label: "Contact" },
-  ];
+  const pathName = usePathname();
 
   return (
     <header
       className={`fixed w-full flex justify-between items-center px-4 md:px-12 transition-all duration-300 z-50 ${
-        isScrolled ? "h-20 bg-white" : "h-20 bg-transparent text-white"
+        isScrolled ? "h-16 glassmorphism-nav bg-green-200" : "h-20 bg-transparent text-white"
       }`}
     >
       {/* Logo */}
@@ -78,23 +75,33 @@ const Navbar2 = () => {
       {/* Navigation */}
       <nav className="relative">
         {/* Mobile menu toggle button */}
-        <button onClick={handleClick} className="h-8 w-8 pr-16 md:hidden">
+        <button aria-label="menu" onClick={handleClick} className="h-8 w-8 pr-16 md:hidden">
           <LucideMenu />
         </button>
 
         {/* Navigation links */}
         <ul
-          className={`fixed bg-teal-200/20 backdrop-blur-md left-0 right-0 min-h-screen flex flex-col justify-center items-center space-y-4 p-4 transform transition-transform duration-300 ${
+          className={`fixed left-0 right-0 min-h-screen flex flex-col justify-center items-center space-y-4 p-4 transform transition-transform duration-300 ${
             open ? "translate-x-0" : "-translate-x-full"
-          } md:relative md:bg-transparent md:backdrop-blur-0 md:flex md:flex-row md:min-h-0 md:space-y-0 md:space-x-6 md:p-0 md:translate-x-0 text-lg`}
+          } md:relative  md:flex md:flex-row md:min-h-0 md:space-y-0 md:space-x-6 md:p-0 md:translate-x-0 text-lg`}
         >
-          {navItems.map((item, index) => (
-            <li key={index}>
-              <Link href={item.href} className="hover:text-orange-500 hover:shadow-md font-mono">
-                {item.label}
-              </Link>
-            </li>
-          ))}
+          {navItems.map((item, index) => {
+            const isActive =
+              pathName === item.href || pathName.startsWith(`${item.href}/`);
+            return (
+              <li key={index}>
+                <Link
+                  href={item.href}
+                  className={cn(
+                    "hover:text-orange-500 hover:shadow-md font-mono font-semibold",
+                    { "border-b-2 shadow-md border-orange-500": isActive }
+                  )}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </header>

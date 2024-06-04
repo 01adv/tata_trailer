@@ -42,7 +42,7 @@ const HeroSection = () => {
             </p>
             <div className="bg-white h-0.5 mt-3"></div>
             <div className="flex items-center justify-center mt-6 md:mt-10 gap-4 flex-col sm:flex-row">
-              <Button className=" bg-orange-500 font-medium hover:bg-white hover:text-black">
+              <Button>
                 Ship with us
               </Button>
             </div>

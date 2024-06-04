@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import { Card as UICard, CardContent } from "@/components/ui/card";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 // Carousel Component
 export function CarouselSpacing() {
@@ -55,9 +56,9 @@ const Portfolio = () => {
         <CarouselSpacing />
       </div>
       <div className="flex items-center justify-center mt-8">
-        <Button className="bg-gray-200 px-6 text-black hover:bg-orange-500 hover:text-white  shadow-md shadow-black/20 ">View All</Button>
+        <Link href={'/'}><Button>View All</Button></Link>
       </div>
-    </div>
+    </div> 
   );
 };
 

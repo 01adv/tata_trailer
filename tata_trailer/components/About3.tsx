@@ -7,12 +7,12 @@ const About3 = () => {
     <div className="bg-emerald-100 py-20 mb-10">
       <div className=" max-w-7xl mx-auto  grid grid-cols-1 lg:grid-cols-2 px-10">
         <div className=" py-10 rounded-lg">
-          <h1 className="text-6xl text-start text-gray-800">
+          <h1 className="text-3xl md:text-5xl text-start text-gray-800">
             <span className=" text-orange-500 font-bold">What Makes Our</span>{" "}
             Global Transportation Company Different?
           </h1>
           <div className="flex justify-start items-center pt-10">
-            <Button className="py-6 px-8 rounded-full text-lg bg-orange-500 hover:bg-orange-600">
+            <Button >
               Contact Us
             </Button>
           </div>

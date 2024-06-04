@@ -3,9 +3,6 @@ import Image from "next/image";
 const Hero2 = () => {
   return (
     <div className="relative h-screen w-full pt-28">
-      {" "}
-      {/* Adjust pt-28 for padding from top */}
-      {/* Background Image */}
       <div className="absolute inset-0">
         <Image
           src={"/assets/truck.jpg"}
@@ -26,7 +23,7 @@ const Hero2 = () => {
             {/* Adjust width and padding for the right half */}
             <h1
               className="text-5xl sm:text-6xl md:text-7xl xl:text-7xl text-orange-500  font-medium"
-              style={{ lineHeight: "4rem" }}
+              style={{ lineHeight: "5rem" }}
             >
               We Provide Safest{" "}
               <span className="text-white">Transport & Logistics</span>{" "}

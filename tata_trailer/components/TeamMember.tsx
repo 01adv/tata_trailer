@@ -15,8 +15,7 @@ const teamMembers = [
   {
     name: "Bonnie Green",
     role: "CEO/Co-founder",
-    imageUrl:
-    '/assets/trailer.jpg',
+    imageUrl: "/assets/trailer.jpg",
     socialLinks: {
       facebook: "/",
       twitter: "/",
@@ -27,8 +26,7 @@ const teamMembers = [
   {
     name: "Bonnie Green",
     role: "CEO/Co-founder",
-    imageUrl:
-    '/assets/trailer.jpg',
+    imageUrl: "/assets/trailer.jpg",
     socialLinks: {
       facebook: "/",
       twitter: "/",
@@ -39,8 +37,7 @@ const teamMembers = [
   {
     name: "Bonnie Green",
     role: "CEO/Co-founder",
-    imageUrl:
-    '/assets/trailer.jpg',
+    imageUrl: "/assets/trailer.jpg",
     socialLinks: {
       facebook: "/",
       twitter: "/",
@@ -51,8 +48,7 @@ const teamMembers = [
   {
     name: "Bonnie Green",
     role: "CEO/Co-founder",
-    imageUrl:
-      '/assets/trailer.jpg',
+    imageUrl: "/assets/trailer.jpg",
     socialLinks: {
       facebook: "/",
       twitter: "/",
@@ -65,27 +61,27 @@ const teamMembers = [
 
 const TeamMemberCard = ({ member }: any) => (
   <div className="text-center text-gray-500 dark:text-gray-400">
-    
-    <Link href={`/profile/${member.id}`} passHref>
-  <div className="mx-auto mb-4 w-40 h-40 relative">
-    <Image
-      className="rounded-full"
-      src={member.imageUrl}
-      alt={`${member.name} Avatar`}
-      fill
-    />
-  </div>
-</Link>
+    <div className="mx-auto mb-4 w-40 h-40 relative">
+      <Image
+        className="rounded-full"
+        src={member.imageUrl}
+        alt={`${member.name} Avatar`}
+        fill
+      />
+    </div>
 
     <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-      <Link href="/">{member.name}</Link>
+      <Link href="/" aria-label="team">
+        {member.name}
+      </Link>
     </h3>
     <p>{member.role}</p>
     <ul className="flex justify-center mt-4 space-x-4">
       <li>
         <Link
           href={member.socialLinks.facebook}
-          className="text-[#39569c] hover:text-gray-900 dark:hover:text-white"
+          aria-label="social"
+          className="text-blue-500 hover:text-gray-900 dark:hover:text-white"
         >
           <FacebookIcon />
         </Link>
@@ -93,7 +89,8 @@ const TeamMemberCard = ({ member }: any) => (
       <li>
         <Link
           href={member.socialLinks.twitter}
-          className="text-[#00acee] hover:text-gray-900 dark:hover:text-white"
+          aria-label="social"
+          className="text-blue-500 hover:text-gray-900 dark:hover:text-white"
         >
           <Twitter />
         </Link>
@@ -101,6 +98,7 @@ const TeamMemberCard = ({ member }: any) => (
       <li>
         <Link
           href={member.socialLinks.linkedin}
+          aria-label="social"
           className="text-gray-900 hover:text-gray-900 dark:hover:text-white dark:text-gray-300"
         >
           <Linkedin />
@@ -109,7 +107,8 @@ const TeamMemberCard = ({ member }: any) => (
       <li>
         <Link
           href={member.socialLinks.phone}
-          className="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white"
+          aria-label="social"
+          className="text-red-500 hover:text-gray-900 dark:hover:text-white"
         >
           <PhoneCallIcon />
         </Link>

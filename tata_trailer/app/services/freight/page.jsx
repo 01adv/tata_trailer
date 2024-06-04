@@ -27,7 +27,7 @@ const page = () => {
                 Freight forwarding and Management
               </h1>
               <div className="flex justify-start items-center pt-10">
-                <Button className="py-6 px-8 rounded-full text-lg bg-orange-500 hover:bg-orange-600">
+                <Button>
                   Contact Us
                 </Button>
               </div>

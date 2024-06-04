@@ -1,55 +1,11 @@
+import { serviceCardData } from "@/constants";
 import { CarouselSpacing } from "./CarouselSpacing"; // Import the CarouselSpacing component
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const ServiceCard = () => {
   // Array containing data for each service card
-  const serviceData = [
-    {
-      title: "Freight Forwarding",
-      description:
-        "Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.",
-      buttonText: "Know more",
-      imgSrc: "/assets/truck2.jpg",
-    },
-    {
-      title: "Freight Forwarding",
-      description:
-        "Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.",
-      buttonText: "Know more",
-      imgSrc: "/assets/truck2.jpg",
-    },
-    {
-      title: "Freight Forwarding",
-      description:
-        "Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.",
-      buttonText: "Know more",
-      imgSrc: "/assets/truck2.jpg",
-    },
-    {
-      title: "Freight Forwarding",
-      description:
-        "Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.",
-      buttonText: "Know more",
-      imgSrc: "/assets/truck2.jpg",
-    },
-    // Add more service data objects as needed
-    {
-      title: "Freight Forwarding",
-      description:
-        "Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.",
-      buttonText: "Know more",
-      imgSrc: "/assets/truck2.jpg",
-    },
-    // Add more service data objects as needed
-    {
-      title: "Freight Forwarding",
-      description:
-        "Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.",
-      buttonText: "Know more",
-      imgSrc: "/assets/truck2.jpg",
-    },
-    // Add more service data objects as needed
-  ];
+  
 
   return (
     <div className="container md:max-w-7xl items-center px-4  m-auto sm:max-w-4xl">
@@ -64,13 +20,13 @@ const ServiceCard = () => {
         </h2>
       </div>
       <div className="flex items-center justify-center mt-10 w-full">
-        <CarouselSpacing serviceData={serviceData} />
+        <CarouselSpacing serviceData={serviceCardData} />
       </div>
       <div className="p-9">
         <div className="flex items-center justify-center">
-          <Button className="bg-orange-500 px-6 rounded-none font-semibold tracking-wide text-sm shadow-md hover:bg-green-500">
+          <Link href={'/services'}><Button >
             View All
-          </Button>
+          </Button></Link>
         </div>
         <p className="text-center tracking-wide font-medium pt-2">
           We provide customized transport services.

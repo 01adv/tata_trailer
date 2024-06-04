@@ -1,36 +1,10 @@
-import { Dribbble, Facebook, Github, Instagram, X } from "lucide-react";
 import React from "react";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { companyLinks, legalLinks, serviceLinks, socialLinks } from "@/constants";
 
 const Footer2 = () => {
-  const socialLinks = [
-    { href: "", icon: <Facebook />, label: "Facebook" },
-    { href: "", icon: <Instagram />, label: "Instagram" },
-    { href: "", icon: <X />, label: "Twitter" },
-    { href: "", icon: <Github />, label: "GitHub" },
-    { href: "", icon: <Dribbble />, label: "Dribbble" },
-  ];
-
-  const serviceLinks = [
-    { href: "", label: "Personal Account" },
-    { href: "", label: "Join Account" },
-    { href: "", label: "Wealth Account" },
-    { href: "", label: "Team Account" },
-  ];
-
-  const companyLinks = [
-    { href: "", label: "About Us" },
-    { href: "", label: "Blog & News" },
-    { href: "", label: "Careers" },
-    { href: "", label: "Help" },
-  ];
-
-  const legalLinks = [
-    { href: "", label: "Terms & Conditions" },
-    { href: "", label: "Privacy Policy" },
-  ];
-
+  
   return (
     <footer>
       <div className="pt-16">
@@ -57,7 +31,7 @@ const Footer2 = () => {
                     Address :
                   </th>
                   <td className="px-2 py-2">
-                  Sidcul, Pant Nagar,
+                    Sidcul, Pant Nagar,
                     <br />
                     263153, Uttarakhand, India
                   </td>
@@ -76,7 +50,7 @@ const Footer2 = () => {
                   rel="noreferrer"
                 >
                   <span className="sr-only">{link.label}</span>
-                  {link.icon}
+                  <link.icon/>
                 </Link>
               ))}
             </div>
@@ -97,7 +71,7 @@ const Footer2 = () => {
                 className="w-full rounded-2xl border border-gray-800 bg-white/5 px-3.5 py-2 text-gray-600 text-sm shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
                 placeholder="Enter email"
               />
-              <Button className="w-full mt-2 rounded-2xl px-3.5 py-2.5 text-sm font-semibold shadow-sm bg-gray-200 text-black hover:bg-orange-500 hover:text-white">
+              <Button className="w-full mt-2 rounded-2xl px-3.5 py-2.5 font-semibold shadow-sm">
                 Subscribe
               </Button>
             </form>

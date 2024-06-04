@@ -14,7 +14,7 @@ const HorizontalStrip = () => {
       >
         <ul
           x-ref="logos"
-          className="text-black/40 text-4xl font-mono flex items-center justify-center text-nowrap md:justify-start [&_li]:mx-8 [&_img]:max-w-none  animate-infinite-scroll"
+          className="text-gray-600 text-4xl font-mono flex items-center justify-center text-nowrap md:justify-start [&_li]:mx-8 [&_img]:max-w-none  animate-infinite-scroll"
         >
           <li>
             <p className="      tracking-wider">

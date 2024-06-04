@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const AboutComp = () => {
   return (
@@ -8,29 +9,25 @@ const AboutComp = () => {
         <div className="flex flex-wrap items-center justify-between -mx-4">
           <div className="w-full px-4 lg:w-1/2">
             <div className="flex items-center -mx-3 sm:-mx-4">
-              <div className="w-full px-3 sm:px-4 xl:w-1/2">
-                <div className="py-3 sm:py-4">
+              <div className="w-full px-3 space-y-4 sm:px-4 xl:w-1/2">
+                <div className="relative py-3 sm:py-4 h-40 md:h-72">
                   <Image
                     src="/assets/trailer.jpg"
                     alt=""
                     className="w-full rounded-2xl"
-                    layout="responsive"
-                    width={100}
-                    height={100}
+                    fill
                   />
                 </div>
-                <div className="py-3 sm:py-4">
+                <div className="relative py-3 sm:py-4 h-40 md:h-72">
                   <Image
                     src="/assets/trailer.jpg"
                     alt=""
                     className="w-full rounded-2xl"
-                    layout="responsive"
-                    width={100}
-                    height={100}
+                    fill
                   />
                 </div>
               </div>
-              <div className="w-full px-3 sm:px-4 xl:w-1/2 h-96">
+              <div className="w-full px-3 sm:px-4 xl:w-1/2 h-60 md:h-96">
                 <div className="relative z-10 my-4  h-full">
                   <Image
                     src="/assets/trailer.jpg"
@@ -71,9 +68,10 @@ const AboutComp = () => {
                 brand. Secure a consistent brand image with a domain name that
                 matches your business.
               </p>
-              <Button className="bg-orange-500 hover:bg-orange-400">
-                Get Started
-              </Button>
+              <Link href={"/about"}>
+                {" "}
+                <Button>Know More</Button>
+              </Link>
             </div>
           </div>
         </div>

@@ -4,17 +4,16 @@ import {
   IndianRupeeIcon,
   ShieldCheck,
 } from "lucide-react";
-import { Button } from "./ui/button";
 
 const WhyUs2 = () => {
   return (
-    <div className="container items-center px-4 py-8 m-auto mt-5">
-      <div className="text-center items-center py-14">
+    <div className=" bg-orange-100/20 items-center px-4 py-8 md:py-16 m-auto mt-5">
+      <div className="max-w-7xl mx-auto"><div className="text-center items-center py-14">
         <p className=" text-xl font-mono text-black text-center font-semibold">
           What else we can do for you
         </p>
         <h2 className="font-serif text-center text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-yellow-500 to-green-500">
-          More than just a Transporter
+          More Than Just A Transporter
         </h2>
       </div>
       <div className="flex flex-wrap pb-3 mx-12 md:mx-24 lg:mx-0">
@@ -87,9 +86,7 @@ const WhyUs2 = () => {
           </div>
         </div>
       </div>
-      <div className="w-full flex items-center justify-center mt-8">
-        <Button>View all features</Button>
-      </div>
+</div>
     </div>
   );
 };

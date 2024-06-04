@@ -1,8 +1,6 @@
-import React from "react";
-import image from "@/public/assets/truck2.jpg";
 import { ArrowRight } from "lucide-react";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "./ui/button";
 
 const Card = () => {
@@ -31,7 +29,7 @@ const Card = () => {
           Here are the biggest enterprise technology acquisitions of 2021 so
           far, in reverse chronological order.
         </p>
-        <Button className="bg-orange-500 hover:bg-gray-100 hover:text-black">
+        <Button>
         Read more
           <ArrowRight size={15} />
         </Button>

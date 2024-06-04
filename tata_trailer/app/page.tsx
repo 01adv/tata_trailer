@@ -1,7 +1,6 @@
-"use client";
+
 import AboutComp from "@/components/AboutComp";
 import Faq from "@/components/Faq";
-import HeroSection from "@/components/Hero";
 import Hero2 from "@/components/Hero2";
 import Nxthero from "@/components/Nxthero";
 import Portfolio from "@/components/Portfolio";
@@ -14,7 +13,6 @@ export default function Home() {
   return (
     <main>
       <Hero2 />
-      {/* <HeroSection /> */}
 
       <Nxthero />
       <AboutComp />

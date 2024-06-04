@@ -1,74 +1,63 @@
-import QuoteForm from "@/components/QuoteForm";
-import {
-  LucidePhone,
-  MailIcon,
-  MapPinIcon,
-  PhoneCall,
-  PhoneIcon,
-} from "lucide-react";
-import React from "react";
+import HorizontalStrip from "@/components/HorizontalStrip";
+import { contactCardsData } from "@/constants";
+import Image from "next/image";
 
-const page = () => {
+const Page = () => {
   return (
-    <div className=" w-full">
-      <div className=" w-full h-[65vh] bg-rose-200 flex justify-center items-center">
-        <div>
-          <h2 className=" font-semibold text-6xl text-white text-center">
-            Contact Us
+    <div className="w-full">
+
+      <div className="relative w-full h-[65vh]  flex justify-center items-center">
+        <Image
+          src="/assets/services.jpg" // Path to the image
+          alt="Services Background"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+          className="z-0"
+          
+        />
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm "> </div>
+        <div className="absolute inset-0 flex flex-col items-center justify-center">
+          <h2 className="font-semibold text-4xl sm:6xl md:text-8xl text-white text-center">
+          Contact Us
           </h2>
-          <p className=" font-medium text-orange-500 text-center">
-            Transportation and Logistic Specialist with a vision of future.
+          <p className="font-medium text-orange-500 text-center">
+          Transportation and Logistic Specialist with a vision of future
           </p>
         </div>
       </div>
-      <div className="py-32">
-        <div className=" text-center w-full py-10">
-          <h3 className=" text-xl font-bold text-orange-500 font-mono tracking-widest">
+      <div className="my-16">
+        <HorizontalStrip />
+      </div>
+      <div className="my-20">
+        <div className="text-center w-full py-10">
+          <p className="text-center mb-2 text-base sm:text-lg font-bold text-orange-500">
             Contact Us
-          </h3>
-          <h2 className=" font-serif text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-yellow-500 to-emerald-500">
-            Our<span className="mx-4">Contact</span>Information
+          </p>
+          <h2 className="mb-4 font-serif text-center text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-yellow-500 to-green-500">
+            Our Contact Information
           </h2>
         </div>
         <div className="flex items-center justify-center flex-wrap gap-8">
-          <div className=" w-80 h-72 bg-white shadow-lg   flex justify-center items-center">
-            <div className=" text-center p-4">
-              <div className="flex justify-center items-center p-2">
-                <MapPinIcon className=" text-white bg-orange-500 p-4 rounded-full size-20" />
+          {contactCardsData.map((card, index) => (
+            <div
+              key={index}
+              className={`w-80 h-72 bg-white shadow-lg flex justify-center items-center overflow-hidden rounded-lg`}
+            >
+              <div className="text-center p-4">
+                <div className="flex justify-center items-center p-2">
+                  <card.icon className=" text-white bg-orange-500 p-4 rounded-full size-20" />
+                </div>
+                <p className="text-sm text-gray-700 overflow-hidden overflow-ellipsis">
+                  {card.description}
+                </p>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis,
-                asperiores?asperiores?asperiores?asperiores?
-              </p>
             </div>
-          </div>
-          <div className=" w-80 h-72 bg-white flex shadow-lg   justify-center items-center">
-            <div className=" text-center p-4">
-              <div className="flex justify-center items-center p-2">
-                <PhoneCall className=" text-white bg-orange-500 p-4 rounded-full size-20" />
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis,
-                asperiores?asperiores?asperiores?asperiores?
-              </p>
-            </div>
-          </div>
-          <div className=" w-80 h-72 bg-white shadow-lg   flex justify-center items-center">
-            <div className=" text-center p-4">
-              <div className="flex justify-center items-center p-2">
-                <MailIcon className=" text-white bg-orange-500 p-4 rounded-full size-20" />
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis,
-                asperiores?asperiores?asperiores?asperiores?
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
-      <QuoteForm />
 
-      <div className=" w-full h-[60vh]  my-32">
+      <div className="w-full h-[60vh] my-32">
         <iframe
           title="Map"
           className="w-full h-full"
@@ -81,4 +70,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
