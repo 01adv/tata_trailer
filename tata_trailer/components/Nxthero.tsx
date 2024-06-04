@@ -26,7 +26,7 @@ const Nxthero = () => {
               <CalendarClock className="size-8 sm:size-10 md:size-12 lg:size-16 text-gray-500" />
               <div>
                 <h3 className="  text-gray-800 mb-3">Open full week</h3>
-                <p className="font-bold">Let's work anytime.</p>
+                <p className="font-bold">Le&apos;'s work anytime.</p>
               </div>
             </div>
             <div className="flex gap-2 px-10 py-5">
