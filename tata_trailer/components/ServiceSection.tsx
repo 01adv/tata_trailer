@@ -27,9 +27,9 @@ const ServiceSection: React.FC = () => {
               <span
                 className={`flex h-12 w-12 items-center justify-center rounded-xl ${service.bgColor}`}
               >
-                <service.icon size={40} />
+                <service.icon className="sm:size-16 md:size-20" />
               </span>
-              <h2 className="text-3xl font-bold tracking-tight text-gray-800">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-gray-800">
                 {service.title}
               </h2>
             </div>

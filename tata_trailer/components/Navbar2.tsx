@@ -75,7 +75,7 @@ const Navbar2 = () => {
       {/* Navigation */}
       <nav className="relative">
         {/* Mobile menu toggle button */}
-        <button aria-label="menu" onClick={handleClick} className="h-8 w-8 pr-16 md:hidden">
+        <button aria-label="menu" onClick={handleClick} className="h-8 w-8 pr-8 md:hidden">
           <LucideMenu />
         </button>
 

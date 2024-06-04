@@ -15,11 +15,11 @@ import Link from "next/link";
 
 export default function QuoteV0() {
   return (
-    <div className="bg-emerald-100/50 p-20">
-      <h2 className="px-8 sm:px-10 lg:px-0 mb-4 font-serif text-center text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-yellow-500 to-green-500">
+    <div className="bg-emerald-100/50 p-8 sm:p-14 md:p-20">
+      <h2 className=" sm:px-10 lg:px-0 font-serif text-wrap sm:text-center text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-yellow-500 to-green-500">
         Get Instant Logistic Quote
       </h2>
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 p-4">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 ">
         <div className="relative h-64 lg:h-auto">
           <Image
             src={img}
@@ -29,7 +29,7 @@ export default function QuoteV0() {
             className="rounded-lg"
           />
         </div>
-        <Card className="w-full border-none shadow-none max-w-xl p-8 bg-inherit sm:w-[90vw] mx-auto lg:mx-0 glassmorphism-nav">
+        <Card className="w-full border-none shadow-none max-w-xl bg-inherit sm:w-[90vw] mx-auto lg:mx-0 glassmorphism-nav">
           <CardHeader className="mb-4">
             <div className="flex items-center justify-between flex-wrap">
               <CardTitle className="text-xl font-bold">

@@ -23,7 +23,7 @@ const Hero2 = () => {
             {/* Adjust width and padding for the right half */}
             <h1
               className="text-5xl sm:text-6xl md:text-7xl xl:text-7xl text-orange-500  font-medium"
-              style={{ lineHeight: "5rem" }}
+              
             >
               We Provide Safest{" "}
               <span className="text-white">Transport & Logistics</span>{" "}
