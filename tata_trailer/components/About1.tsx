@@ -1,11 +1,20 @@
+'use client'
 import React from "react";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import useScrollAnimation from "@/hooks/useScrollAnimation";
+import { animated } from "react-spring";
 
 const About1 = () => {
+  const { ref: refMove, animationProps: animationPropsMove } =
+    useScrollAnimation("move");
   return (
     <>
-      <section className="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-dark">
+      <animated.div
+        ref={refMove}
+        style={animationPropsMove}
+        className="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-dark"
+      >
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center justify-between -mx-4">
             <div className="w-full px-4 lg:w-1/2">
@@ -43,16 +52,14 @@ const About1 = () => {
 
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="mt-10 lg:mt-0">
-                <div className=" flex items-center justify-center">
-                  <h3 className="text-xl font-bold font-mono tracking-widest">
-                    Why Choose Us
-                  </h3>
-                </div>
-                <div className=" w-full flex items-center justify-center">
-                  <h2 className="font-serif text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-yellow-500 to-green-500 mb-4">
-                    Make your customers happy by giving services
-                  </h2>
-                </div>
+                <p className="text-xl font-bold font-mono tracking-widest">
+                  Why Choose Us
+                </p>
+
+                <h2 className="font-serif text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-yellow-500 to-green-500 mb-4">
+                  Make your customers happy by giving services
+                </h2>
+
                 <p className="mb-5 text-base text-body-color dark:text-dark-6">
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
@@ -68,7 +75,7 @@ const About1 = () => {
             </div>
           </div>
         </div>
-      </section>
+      </animated.div>
     </>
   );
 };

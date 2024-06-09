@@ -12,13 +12,12 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { Printer } from "lucide-react";
 import Link from "next/link";
+import { QuoteHeading } from "./heading";
 
 export default function QuoteV0() {
   return (
     <div className="bg-emerald-100/50 p-8 sm:p-14 md:p-20">
-      <h2 className=" sm:px-10 lg:px-0 font-serif text-wrap sm:text-center text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-yellow-500 to-green-500">
-        Get Instant Logistic Quote
-      </h2>
+      <QuoteHeading/>
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 ">
         <div className="relative h-64 lg:h-auto">
           <Image

@@ -20,7 +20,7 @@ const ServiceCard = () => {
         </h2>
       </div>
       <div className="flex items-center justify-center mt-10 w-full">
-        <CarouselSpacing serviceData={serviceCardData} />
+        <CarouselSpacing serviceData={serviceCardData}/>
       </div>
       <div className="p-9">
         <div className="flex items-center justify-center">

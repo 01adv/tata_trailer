@@ -1,4 +1,3 @@
-
 import AboutComp from "@/components/AboutComp";
 import Faq from "@/components/Faq";
 import Hero2 from "@/components/Hero2";

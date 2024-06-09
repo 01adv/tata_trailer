@@ -1,4 +1,5 @@
 import HorizontalStrip from "@/components/HorizontalStrip";
+import { ContactHeading } from "@/components/heading";
 import { contactCardsData } from "@/constants";
 import Image from "next/image";
 
@@ -31,12 +32,7 @@ const Page = () => {
       </div>
       <div className="my-20">
         <div className="text-center w-full py-10">
-          <p className="text-center mb-2 text-base sm:text-lg font-bold text-orange-500">
-            Contact Us
-          </p>
-          <h2 className="mb-4 font-serif text-center text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-yellow-500 to-green-500">
-            Our Contact Information
-          </h2>
+          <ContactHeading/>
         </div>
         <div className="flex items-center justify-center flex-wrap gap-8">
           {contactCardsData.map((card, index) => (

@@ -1,11 +1,9 @@
 "use client";
-import React from "react";
-import { CalendarClock, HeadsetIcon, MapPinnedIcon } from "lucide-react";
-import { Button } from "./ui/button";
-import ServiceCard from "./ServiceCard";
-import HorizontalStrip from "./HorizontalStrip";
 import useScrollAnimation from "@/hooks/useScrollAnimation";
+import { CalendarClock, HeadsetIcon, MapPinnedIcon } from "lucide-react";
 import { animated } from "react-spring";
+import HorizontalStrip from "./HorizontalStrip";
+import ServiceCard from "./ServiceCard";
 
 const Nxthero = () => {
   const { ref: refMove, animationProps: animationPropsMove } =

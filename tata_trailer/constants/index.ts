@@ -1,5 +1,11 @@
-import { Dribbble, Facebook, Github, Instagram, LucideIcon, X } from "lucide-react";
-
+import {
+  Dribbble,
+  Facebook,
+  Github,
+  Instagram,
+  LucideIcon,
+  X,
+} from "lucide-react";
 
 //testimonials
 export const testimonials = [
@@ -34,7 +40,6 @@ export const testimonials = [
 ];
 //testimonials ends here
 
-
 // footer
 interface SocialLink {
   href: string;
@@ -43,11 +48,11 @@ interface SocialLink {
 }
 
 export const socialLinks: SocialLink[] = [
-  { href: '/', icon: Facebook, label: "Facebook" },
-  { href: '/', icon: Instagram, label: "Instagram" },
-  { href: '/', icon: X, label: "Twitter" },
-  { href: '/', icon: Github, label: "GitHub" },
-  { href: '/', icon: Dribbble, label: "Dribbble" },
+  { href: "/", icon: Facebook, label: "Facebook" },
+  { href: "/", icon: Instagram, label: "Instagram" },
+  { href: "/", icon: X, label: "Twitter" },
+  { href: "/", icon: Github, label: "GitHub" },
+  { href: "/", icon: Dribbble, label: "Dribbble" },
 ];
 
 export const serviceLinks = [
@@ -79,9 +84,6 @@ export const navItems = [
 
 //footer ends
 
-
-
-
 // service page starts
 
 import { TruckIcon } from "lucide-react";
@@ -101,8 +103,9 @@ export const servicesData: Service[] = [
   {
     icon: TruckIcon,
     title: "Natural Language Processing (NLP)",
-    description: "The AI product utilizes advanced NLP algorithms to understand and interpret human language, enabling it to accurately process and analyze text-based inputs.",
-    bgColor: "bg-orange-500",
+    description:
+      "The AI product utilizes advanced NLP algorithms to understand and interpret human language, enabling it to accurately process and analyze text-based inputs.",
+    bgColor: "text-orange-500",
     btnLink: "/",
     btnText: "Learn More",
     imgSrc: "/assets/truck3.jpg",
@@ -111,8 +114,9 @@ export const servicesData: Service[] = [
   {
     icon: TruckIcon,
     title: "Sentiment Analysis",
-    description: "The product has built-in sentiment analysis capabilities, allowing it to determine the sentiment (positive, negative, or neutral) expressed in text or customer feedback.",
-    bgColor: "bg-pink-500",
+    description:
+      "The product has built-in sentiment analysis capabilities, allowing it to determine the sentiment (positive, negative, or neutral) expressed in text or customer feedback.",
+    bgColor: "text-red-500",
     btnLink: "/login",
     btnText: "Learn More",
     imgSrc: "/assets/truck3.jpg",
@@ -121,8 +125,9 @@ export const servicesData: Service[] = [
   {
     icon: TruckIcon,
     title: "Natural Language Generation (NLG)",
-    description: "The AI product can generate human-like written content, summaries, or reports based on structured data or analysis results.",
-    bgColor: "bg-green-500",
+    description:
+      "The AI product can generate human-like written content, summaries, or reports based on structured data or analysis results.",
+    bgColor: "text-green-500",
     btnLink: "/login",
     btnText: "Learn More",
     imgSrc: "/assets/truck3.jpg",
@@ -132,77 +137,122 @@ export const servicesData: Service[] = [
 
 //service page ends here
 
-
 //contact us data
 import { MailIcon, MapPinIcon, PhoneCall } from "lucide-react";
 interface Contact {
-    icon: LucideIcon;
-    description: string;
-  }
+  icon: LucideIcon;
+  description: string;
+}
 
-  export const contactCardsData: Contact[] = [
-    {
-      icon: MailIcon,
-      description: "The AI product utilizes advanced NLP algorithms to understand and interpret human language, enabling it to accurately process and analyze text-based inputs.",
-    },
-    {
-      icon: MapPinIcon,
-      description: "The AI product utilizes advanced NLP algorithms to understand and interpret human language, enabling it to accurately process and analyze text-based inputs.",
-    },
-    {
-      icon: PhoneCall,
-      
-      description: "The AI product utilizes advanced NLP algorithms to understand and interpret human language, enabling it to accurately process and analyze text-based inputs.",
-    },
-    
-  ];
+export const contactCardsData: Contact[] = [
+  {
+    icon: MailIcon,
+    description:
+      "The AI product utilizes advanced NLP algorithms to understand and interpret human language, enabling it to accurately process and analyze text-based inputs.",
+  },
+  {
+    icon: MapPinIcon,
+    description:
+      "The AI product utilizes advanced NLP algorithms to understand and interpret human language, enabling it to accurately process and analyze text-based inputs.",
+  },
+  {
+    icon: PhoneCall,
 
+    description:
+      "The AI product utilizes advanced NLP algorithms to understand and interpret human language, enabling it to accurately process and analyze text-based inputs.",
+  },
+];
 
-  //homepage service card
-  export const serviceCardData = [
-    {
-      title: "Freight Forwarding",
-      description:
-        "Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.",
-      buttonText: "Know more",
-      imgSrc: "/assets/truck2.jpg",
-    },
-    {
-      title: "Freight Forwarding",
-      description:
-        "Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.",
-      buttonText: "Know more",
-      imgSrc: "/assets/truck2.jpg",
-    },
-    {
-      title: "Freight Forwarding",
-      description:
-        "Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.",
-      buttonText: "Know more",
-      imgSrc: "/assets/truck2.jpg",
-    },
-    {
-      title: "Freight Forwarding",
-      description:
-        "Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.",
-      buttonText: "Know more",
-      imgSrc: "/assets/truck2.jpg",
-    },
-    // Add more service data objects as needed
-    {
-      title: "Freight Forwarding",
-      description:
-        "Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.",
-      buttonText: "Know more",
-      imgSrc: "/assets/truck2.jpg",
-    },
-    // Add more service data objects as needed
-    {
-      title: "Freight Forwarding",
-      description:
-        "Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.",
-      buttonText: "Know more",
-      imgSrc: "/assets/truck2.jpg",
-    },
-    // Add more service data objects as needed
-  ];
+//homepage service card
+export const serviceCardData = [
+  {
+    title: "Freight Forwarding",
+    description:
+      "Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.",
+    buttonText: "Know more",
+    imgSrc: "/assets/truck2.jpg",
+  },
+  {
+    title: "Freight Forwarding",
+    description:
+      "Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.",
+    buttonText: "Know more",
+    imgSrc: "/assets/truck2.jpg",
+  },
+  {
+    title: "Freight Forwarding",
+    description:
+      "Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.",
+    buttonText: "Know more",
+    imgSrc: "/assets/truck2.jpg",
+  },
+  {
+    title: "Freight Forwarding",
+    description:
+      "Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.",
+    buttonText: "Know more",
+    imgSrc: "/assets/truck2.jpg",
+  },
+  // Add more service data objects as needed
+  {
+    title: "Freight Forwarding",
+    description:
+      "Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.",
+    buttonText: "Know more",
+    imgSrc: "/assets/truck2.jpg",
+  },
+  // Add more service data objects as needed
+  {
+    title: "Freight Forwarding",
+    description:
+      "Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.",
+    buttonText: "Know more",
+    imgSrc: "/assets/truck2.jpg",
+  },
+  // Add more service data objects as needed
+];
+
+//faq questions and answers,
+
+export const FaqData = [
+  {
+    question: "What services does Tata Trailer offer?",
+    answer:
+      "Tata Trailer provides a comprehensive range of transport and logistics services including freight transportation, warehousing, distribution, supply chain management, and specialized transport solutions for oversized or hazardous materials.",
+  },
+  {
+    question: "How can I book a transportation service with Tata Trailer?",
+    answer:
+      "Booking a transportation service with Tata Trailer is easy. You can visit our website and fill out the online booking form, or contact our customer service team directly via phone or email to discuss your specific needs and schedule a service.",
+  },
+  {
+    question: "What areas does Tata Trailer serve?",
+    answer:
+      "Tata Trailer offers nationwide services across India. We have an extensive network that allows us to transport goods to and from any location within the country. We also offer international shipping services to selected destinations.",
+  },
+  {
+    question: "How does Tata Trailer ensure the safety of transported goods?",
+    answer:
+      "The safety of your goods is our top priority. Tata Trailer uses state-of-the-art tracking systems, well-maintained vehicles, and trained drivers to ensure secure and timely delivery. Additionally, we offer insurance options to cover any unforeseen circumstances during transit.",
+  },
+  {
+    question: "What types of goods can Tata Trailer transport?",
+    answer:
+      "Tata Trailer can transport a wide variety of goods, including general merchandise, perishable items, oversized equipment, hazardous materials, and more. Our fleet is equipped to handle diverse transportation needs, ensuring that your cargo is delivered safely and efficiently.",
+  },
+  {
+    question: "How can I track my shipment with Tata Trailer?",
+    answer:
+      "You can easily track your shipment with Tata Trailer using our online tracking system. Simply enter your tracking number on our website to get real-time updates on the status and location of your shipment. You can also contact our customer service team for assistance.",
+  },
+  {
+    question: "What payment methods does Tata Trailer accept?",
+    answer:
+      "Tata Trailer accepts a variety of payment methods for your convenience. You can pay using credit cards, debit cards, bank transfers, and online payment platforms. For corporate clients, we also offer invoicing and credit terms upon approval.",
+  },
+  {
+    question: "How can I contact Tata Trailer for customer support?",
+    answer:
+      "Our customer support team is available to assist you with any questions or concerns. You can reach us by phone at [Customer Support Phone Number], email at [Customer Support Email], or through our website's contact form. We are committed to providing prompt and efficient support to all our clients.",
+  },
+];

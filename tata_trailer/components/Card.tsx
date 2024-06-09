@@ -14,7 +14,7 @@ const Card = () => {
             src={"/assets/trailer.jpg"}
             alt={`Avatar`}
             fill
-
+            loading="lazy"
           />
         </div>
       </Link>

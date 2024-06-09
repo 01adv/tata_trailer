@@ -4,7 +4,7 @@ import { useSpring } from "react-spring";
 const useScrollAnimation = (type) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.4,
   });
 
   const animationProps = useSpring(
