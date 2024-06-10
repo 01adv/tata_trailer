@@ -101,3 +101,9 @@
   backdrop-filter: blur(37px);
   -webkit-backdrop-filter: blur(37px);
 }
+
+/* for navbar */
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}

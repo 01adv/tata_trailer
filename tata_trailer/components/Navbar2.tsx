@@ -7,58 +7,51 @@ import { usePathname } from "next/navigation";
 import React, { useState, useEffect } from "react";
 
 const Navbar2 = () => {
-  // State for toggling the mobile menu
   const [open, setOpen] = useState(false);
-
-  // State for tracking scroll position
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // Function to toggle the mobile menu
   const handleClick = () => {
     setOpen(!open);
   };
 
-  // Function to handle link click and close the menu
   const handleLinkClick = () => {
     setOpen(false);
   };
 
-  // Effect to handle scroll events and persist scroll position
   useEffect(() => {
-    // Function to handle scroll events
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       if (scrollPosition > 0) {
         setIsScrolled(true);
-        // Store the scroll position in localStorage
         window.localStorage.setItem(
           "scrollPosition",
           scrollPosition.toString()
         );
       } else {
-        // Inherit the color from the hero section
         setIsScrolled(false);
-        // Remove the scroll position in localStorage
         window.localStorage.removeItem("scrollPosition");
       }
     };
 
-    // Retrieve scroll position from localStorage on component mount
     const storedScrollPosition = window.localStorage.getItem("scrollPosition");
     if (storedScrollPosition) {
-      // Restore the scroll position from localStorage
       window.scrollTo(0, parseInt(storedScrollPosition, 10));
       setIsScrolled(true);
     }
 
-    // Add scroll event listener
     window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    if (open) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  }, [open]);
 
   const pathName = usePathname();
 
@@ -70,16 +63,13 @@ const Navbar2 = () => {
           : "h-20 bg-transparent text-white"
       }`}
     >
-      {/* Logo */}
       <Link href="/">
         <h1 className={`font-extrabold ${isScrolled ? "text-xl" : "text-2xl"}`}>
           <span className=" text-green-500">TATA</span>{" "}
           <span className=" text-orange-400">TRAILER</span>
         </h1>
       </Link>
-      {/* Navigation */}
       <nav className="relative">
-        {/* Mobile menu toggle button */}
         <button
           aria-label="menu"
           onClick={handleClick}
