@@ -16,8 +16,8 @@ const CarouselDemo = ({ items, renderItem }: any) => (
         </CarouselItem>
       ))}
     </CarouselContent>
-    <CarouselPrevious className="" />
-    <CarouselNext className="" />
+    <CarouselPrevious />
+    <CarouselNext />
   </Carousel>
 );
 

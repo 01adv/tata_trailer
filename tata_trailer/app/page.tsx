@@ -23,7 +23,9 @@ export default function Home() {
 
       <Testimonials />
 
-      <QuoteV0 />
+      
+        <QuoteV0 />
+      
       <Faq />
     </main>
   );

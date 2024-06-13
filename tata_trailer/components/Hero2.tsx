@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { HeroHeading } from "./heading";
+import Partners from "./Partners";
+import HorizontalStrip from "./HorizontalStrip";
 
 const Hero2 = () => {
   return (
@@ -23,6 +25,7 @@ const Hero2 = () => {
             <HeroHeading />
           </div>
         </div>
+        
       </div>
     </div>
   );

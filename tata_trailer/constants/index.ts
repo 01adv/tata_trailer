@@ -256,3 +256,106 @@ export const FaqData = [
       "Our customer support team is available to assist you with any questions or concerns. You can reach us by phone at [Customer Support Phone Number], email at [Customer Support Email], or through our website's contact form. We are committed to providing prompt and efficient support to all our clients.",
   },
 ];
+
+export const portfolioImages = [
+  {
+    img: "/assets/portfolio/1.jpeg",
+    title: "Project 1",
+    description: "Project 1 description",
+  },
+  {
+    img: "/assets/portfolio/2.jpeg",
+    title: "Project 2",
+    description: "Project 2 description",
+  },
+  {
+    img: "/assets/portfolio/3.jpeg",
+    title: "Project 3",
+    description: "Project 3 description",
+  },
+  {
+    img: "/assets/portfolio/4.jpeg",
+    title: "Project 4",
+    description: "Project 4 description",
+  },
+  {
+    img: "/assets/portfolio/5.jpeg",
+    title: "Project 5",
+    description: "Project 5 description",
+  },
+  {
+    img: "/assets/portfolio/6.jpeg",
+    title: "Project 6",
+    description: "Project 6 description",
+  },
+  {
+    img: "/assets/portfolio/7.jpeg",
+    title: "Project 7",
+    description: "Project 7 description",
+  },
+  {
+    img: "/assets/portfolio/8.jpeg",
+    title: "Project 8",
+    description: "Project 8 description",
+  },
+  {
+    img: "/assets/portfolio/9.jpeg",
+    title: "Project 9",
+    description: "Project 9 description",
+  },
+  {
+    img: "/assets/portfolio/10.jpeg",
+    title: "Project 10",
+    description: "Project 10 description",
+  },
+  {
+    img: "/assets/portfolio/11.jpeg",
+    title: "Project 11",
+    description: "Project 11 description",
+  },
+  {
+    img: "/assets/portfolio/12.jpeg",
+    title: "Project 12",
+    description: "Project 12 description",
+  },
+  {
+    img: "/assets/portfolio/13.jpeg",
+    title: "Project 13",
+    description: "Project 13 description",
+  },
+  {
+    img: "/assets/portfolio/14.jpeg",
+    title: "Project 14",
+    description: "Project 14 description",
+  },
+  {
+    img: "/assets/portfolio/15.jpeg",
+    title: "Project 15",
+    description: "Project 15 description",
+  },
+  {
+    img: "/assets/portfolio/16.jpeg",
+    title: "Project 16",
+    description: "Project 16 description",
+  },
+  {
+    img: "/assets/portfolio/17.jpeg",
+    title: "Project 17",
+    description: "Project 17 description",
+  },
+  {
+    img: "/assets/portfolio/18.jpeg",
+    title: "Project 18",
+    description: "Project 18 description",
+  },
+  {
+    img: "/assets/portfolio/19.jpeg",
+    title: "Project 19",
+    description: "Project 19 description",
+  },
+  {
+    img: "/assets/portfolio/20.jpeg",
+    title: "Project 20",
+    description: "Project 20 description",
+  },
+];

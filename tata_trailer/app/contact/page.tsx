@@ -1,4 +1,5 @@
 import HorizontalStrip from "@/components/HorizontalStrip";
+import QuoteV0 from "@/components/Quote-v0";
 import { ContactHeading } from "@/components/heading";
 import { contactCardsData } from "@/constants";
 import Image from "next/image";
@@ -6,7 +7,6 @@ import Image from "next/image";
 const Page = () => {
   return (
     <div className="w-full">
-
       <div className="relative w-full h-[65vh]  flex justify-center items-center">
         <Image
           src="/assets/services.jpg" // Path to the image
@@ -15,15 +15,14 @@ const Page = () => {
           objectFit="cover"
           quality={100}
           className="z-0"
-          
         />
         <div className="absolute inset-0 bg-black/40 backdrop-blur-sm "> </div>
         <div className="absolute inset-0 flex flex-col items-center justify-center">
           <h2 className="font-semibold text-4xl sm:6xl md:text-8xl text-white text-center">
-          Contact Us
+            Contact Us
           </h2>
           <p className="font-medium text-orange-500 text-center">
-          Transportation and Logistic Specialist with a vision of future
+            Transportation and Logistic Specialist with a vision of future
           </p>
         </div>
       </div>
@@ -32,7 +31,7 @@ const Page = () => {
       </div>
       <div className="my-20">
         <div className="text-center w-full py-10">
-          <ContactHeading/>
+          <ContactHeading />
         </div>
         <div className="flex items-center justify-center flex-wrap gap-8">
           {contactCardsData.map((card, index) => (
@@ -62,6 +61,8 @@ const Page = () => {
           loading="lazy"
         ></iframe>
       </div>
+
+      <QuoteV0 />
     </div>
   );
 };

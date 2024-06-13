@@ -18,7 +18,7 @@ const AboutComp = () => {
                 <div className="w-full px-3 space-y-4 sm:px-4 xl:w-1/2">
                   <div className="relative py-3 sm:py-4 h-40 md:h-72">
                     <Image
-                      src="/assets/trailer.jpg"
+                      src="/assets/abt.jpg"
                       alt=""
                       className="w-full rounded-2xl"
                       fill
@@ -27,7 +27,7 @@ const AboutComp = () => {
                   </div>
                   <div className="relative py-3 sm:py-4 h-40 md:h-72">
                     <Image
-                      src="/assets/trailer.jpg"
+                      src="/assets/abt2.jpg"
                       alt=""
                       className="w-full rounded-2xl"
                       fill
@@ -38,11 +38,12 @@ const AboutComp = () => {
                 <div className="w-full px-3 sm:px-4 xl:w-1/2 h-60 md:h-96">
                   <div className="relative z-10 my-4  h-full">
                     <Image
-                      src="/assets/trailer.jpg"
+                      src="/assets/abt3.jpg"
                       alt=""
                       className="w-full h-full object-cover rounded-2xl"
                       layout="fill"
                       loading="lazy"
+                      objectFit="center"
                     />
                   </div>
                 </div>

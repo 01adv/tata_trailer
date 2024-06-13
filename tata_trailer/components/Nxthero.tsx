@@ -11,7 +11,7 @@ const Nxthero = () => {
   return (
     <>
       <div className=" w-full">
-        <div className="relative max-w-7xl mx-auto bg-white h-auto md:h-32 mt-20 md:-mt-8 md:rounded-full z-30">
+        {/* <div className="relative max-w-7xl mx-auto bg-white h-auto md:h-32 mt-20 md:-mt-8 md:rounded-full z-30">
           <div className="w-full h-full flex items-center justify-center md:justify-evenly flex-wrap gap-5">
             <div className="flex gap-2 px-10 py-5">
               <HeadsetIcon className=" size-8 sm:size-10 md:size-12 lg:size-16 text-orange-500" />
@@ -37,7 +37,7 @@ const Nxthero = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <animated.div ref={refMove} style={animationPropsMove}>
           <ServiceCard />

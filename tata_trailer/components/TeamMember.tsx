@@ -99,7 +99,7 @@ const TeamMember = () => {
         </div>
         <div className="hidden md:flex items-center justify-center flex-wrap gap-40">
           {teamMembers.map((member, index) => (
-            <TeamMemberCard key={index} member={member} />
+            <TeamMemberCard key={index} member={member}/>
           ))}
         </div>
         <div className="md:hidden flex items-center justify-center">
