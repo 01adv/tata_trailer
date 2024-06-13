@@ -110,7 +110,7 @@ const Navbar2 = () => {
           </button>
           <ul
             className={`fixed left-0 right-0 min-h-screen flex flex-col justify-start items-start space-y-4 p-4 transform transition-transform duration-300 ${
-              open ? "translate-x-0 bg-gray-100" : "-translate-x-full"
+              open ? "translate-x-0 bg-gray-100 text-black" : "-translate-x-full"
             } md:relative md:flex md:flex-row md:min-h-0 md:space-y-0 md:space-x-6 md:p-0 md:translate-x-0 text-lg`}
           >
             {navItems.map((item, index) => {
