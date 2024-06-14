@@ -28,6 +28,7 @@ const ServiceSection: React.FC = () => {
                 width={500}
                 height={300}
                 className="w-full h-auto rounded-lg"
+                loading="lazy"
               />
             </div>
             <div className="md:w-1/2 p-6 text-center md:text-left">
