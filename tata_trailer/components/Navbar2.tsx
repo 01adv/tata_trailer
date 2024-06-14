@@ -123,7 +123,7 @@ const Navbar2 = () => {
                     className={cn(
                       "block w-full py-2 px-4 hover:text-orange-500 hover:border-b-2 border-white font-mono font-semibold",
                       {
-                        "text-orange-500 md:text-black md:border-b-2 md:border-orange-500":
+                        "text-orange-500 md:text-orange-500 md:border-b-2 md:border-orange-500":
                           isActive,
                       }
                     )}
@@ -134,7 +134,7 @@ const Navbar2 = () => {
                 </li>
               );
             })}
-            <li className="py-1">
+            <li className="py-1 px-2 md:px-0">
               <Link href="/#quote">
                 <Button className="py-2" variant={"destructive"}>
                   Quote

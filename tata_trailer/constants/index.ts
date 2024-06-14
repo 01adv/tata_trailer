@@ -101,37 +101,114 @@ interface Service {
 
 export const servicesData: Service[] = [
   {
-    icon: TruckIcon,
-    title: "Natural Language Processing (NLP)",
+    icon: TruckIcon, // Replace with appropriate icon
+    title: "Industrial Machinery Transport",
     description:
-      "The AI product utilizes advanced NLP algorithms to understand and interpret human language, enabling it to accurately process and analyze text-based inputs.",
+      "Our logistics company specializes in the transport of all types of industrial machinery, ensuring safe and efficient delivery to your desired location.",
     bgColor: "text-orange-500",
-    btnLink: "/",
+    btnLink: "/services/industrial-machinery-transport",
     btnText: "Learn More",
-    imgSrc: "/assets/truck3.jpg",
-    imgAlt: "NLP Service",
+    imgSrc: "/assets/industrial-machinery-transport.jpg",
+    imgAlt: "Industrial Machinery Transport",
   },
   {
-    icon: TruckIcon,
-    title: "Sentiment Analysis",
+    icon: TruckIcon, // Replace with appropriate icon
+    title: "Heavy Equipment Transport",
     description:
-      "The product has built-in sentiment analysis capabilities, allowing it to determine the sentiment (positive, negative, or neutral) expressed in text or customer feedback.",
-    bgColor: "text-red-500",
-    btnLink: "/login",
+      "We provide reliable heavy equipment transport services, handling oversized loads with precision and care to meet your project requirements.",
+    bgColor: "text-blue-500",
+    btnLink: "/services/heavy-equipment-transport",
     btnText: "Learn More",
-    imgSrc: "/assets/truck3.jpg",
-    imgAlt: "Sentiment Analysis Service",
+    imgSrc: "/assets/heavy-equipment-transport.jpg",
+    imgAlt: "Heavy Equipment Transport",
   },
   {
-    icon: TruckIcon,
-    title: "Natural Language Generation (NLG)",
+    icon: TruckIcon, // Replace with appropriate icon
+    title: "Tractor Crane Transport",
     description:
-      "The AI product can generate human-like written content, summaries, or reports based on structured data or analysis results.",
+      "Our expert team offers tractor crane transport solutions, facilitating the movement of these essential machines to your worksite.",
     bgColor: "text-green-500",
-    btnLink: "/login",
+    btnLink: "/services/tractor-crane-transport",
     btnText: "Learn More",
-    imgSrc: "/assets/truck3.jpg",
-    imgAlt: "NLG Service",
+    imgSrc: "/assets/tractor-crane-transport.jpg",
+    imgAlt: "Tractor Crane Transport",
+  },
+  {
+    icon: TruckIcon, // Replace with appropriate icon
+    title: "Building Structure Transport",
+    description:
+      "We specialize in the transport of building structures, utilizing advanced logistics planning to ensure safe and timely delivery.",
+    bgColor: "text-red-500",
+    btnLink: "/services/building-structure-transport",
+    btnText: "Learn More",
+    imgSrc: "/assets/building-structure-transport.jpg",
+    imgAlt: "Building Structure Transport",
+  },
+  {
+    icon: TruckIcon, // Replace with appropriate icon
+    title: "Garter Channel Transport",
+    description:
+      "Our services include the transport of garter channels, providing secure and efficient logistics solutions for these critical components.",
+    bgColor: "text-yellow-500",
+    btnLink: "/services/garter-channel-transport",
+    btnText: "Learn More",
+    imgSrc: "/assets/garter-channel-transport.jpg",
+    imgAlt: "Garter Channel Transport",
+  },
+  {
+    icon: TruckIcon, // Replace with appropriate icon
+    title: "Warehouse Shifting",
+    description:
+      "We offer comprehensive warehouse shifting services, managing the entire process to minimize downtime and ensure a smooth transition.",
+    bgColor: "text-purple-500",
+    btnLink: "/services/warehouse-shifting",
+    btnText: "Learn More",
+    imgSrc: "/assets/warehouse-shifting.jpg",
+    imgAlt: "Warehouse Shifting",
+  },
+  {
+    icon: TruckIcon, // Replace with appropriate icon
+    title: "Office Moving",
+    description:
+      "Our office moving services are designed to handle the relocation of your business with minimal disruption, ensuring all assets are transported safely.",
+    bgColor: "text-pink-500",
+    btnLink: "/services/office-moving",
+    btnText: "Learn More",
+    imgSrc: "/assets/office-moving.jpg",
+    imgAlt: "Office Moving",
+  },
+  {
+    icon: TruckIcon, // Replace with appropriate icon
+    title: "House Shifting",
+    description:
+      "We provide professional house shifting services, ensuring all your belongings are transported securely to your new home.",
+    bgColor: "text-indigo-500",
+    btnLink: "/services/house-shifting",
+    btnText: "Learn More",
+    imgSrc: "/assets/house-shifting.jpg",
+    imgAlt: "House Shifting",
+  },
+  {
+    icon: TruckIcon, // Replace with appropriate icon
+    title: "International Shipping",
+    description:
+      "Our international shipping services are tailored to meet your global logistics needs, offering reliable and efficient transport solutions worldwide.",
+    bgColor: "text-teal-500",
+    btnLink: "/services/international-shipping",
+    btnText: "Learn More",
+    imgSrc: "/assets/international-shipping.jpg",
+    imgAlt: "International Shipping",
+  },
+  {
+    icon: TruckIcon, // Replace with appropriate icon
+    title: "Slug or Iron Waste Transport",
+    description:
+      "We handle the transport of slug or iron waste, providing specialized services to manage and move these materials safely and efficiently.",
+    bgColor: "text-gray-500",
+    btnLink: "/services/slug-iron-waste-transport",
+    btnText: "Learn More",
+    imgSrc: "/assets/slug-iron-waste-transport.jpg",
+    imgAlt: "Slug or Iron Waste Transport",
   },
 ];
 
@@ -148,18 +225,18 @@ export const contactCardsData: Contact[] = [
   {
     icon: MailIcon,
     description:
-      "The AI product utilizes advanced NLP algorithms to understand and interpret human language, enabling it to accurately process and analyze text-based inputs.",
+      'tatatrailor@gmail.com    support@tatatrailor.com'
   },
   {
     icon: MapPinIcon,
     description:
-      "The AI product utilizes advanced NLP algorithms to understand and interpret human language, enabling it to accurately process and analyze text-based inputs.",
+      "Sidcul Industrial Area, Pantnagar, Udham Singh Nagar 263153, Uttarakhand India",
   },
   {
     icon: PhoneCall,
 
     description:
-      "The AI product utilizes advanced NLP algorithms to understand and interpret human language, enabling it to accurately process and analyze text-based inputs.",
+      "Call us anytime: +91 98200 00000  +91 98200 00000  +91 98200 00000",
   },
 ];
 
@@ -253,7 +330,7 @@ export const FaqData = [
   {
     question: "How can I contact Tata Trailer for customer support?",
     answer:
-      "Our customer support team is available to assist you with any questions or concerns. You can reach us by phone at [Customer Support Phone Number], email at [Customer Support Email], or through our website's contact form. We are committed to providing prompt and efficient support to all our clients.",
+      "Our customer support team is available to assist you with any questions or concerns. You can reach us by phone at [+91 96396 58534], email at [tatatrailor@gmail.com], or through our website's contact form. We are committed to providing prompt and efficient support to all our clients.",
   },
 ];
 
@@ -357,5 +434,47 @@ export const portfolioImages = [
     img: "/assets/portfolio/20.jpeg",
     title: "Project 20",
     description: "Project 20 description",
+  },
+];
+
+import {
+  CalendarCheck,
+  Clock10,
+  IndianRupeeIcon,
+  ShieldCheck,
+} from "lucide-react";
+
+export const whyCardData = [
+  {
+    icon: ShieldCheck,
+    title: "Secure Transport Solutions",
+    description:
+      "At Tata Trailor, we ensure your goods are delivered safely and efficiently, with real-time tracking and robust safety measures in place.",
+    bgColor: "bg-indigo-50",
+    hoverBgColor: "group-hover:bg-indigo-100",
+  },
+  {
+    icon: Clock10,
+    title: "On-Time Shipments",
+    description:
+      "We value your time. Our logistics services guarantee on-time delivery with precise time tracking for all your shipments.",
+    bgColor: "bg-pink-50",
+    hoverBgColor: "group-hover:bg-pink-100",
+  },
+  {
+    icon: CalendarCheck,
+    title: "Streamlined Supply Chain",
+    description:
+      "Our advanced resource planning tools help optimize your supply chain, ensuring efficient use of resources and cost-effective operations.",
+    bgColor: "bg-purple-50",
+    hoverBgColor: "group-hover:bg-purple-100",
+  },
+  {
+    icon: IndianRupeeIcon,
+    title: "Affordable Freight Services",
+    description:
+      "Tata Trailor offers competitive pricing and flexible invoicing options to meet your budget needs without compromising on quality.",
+    bgColor: "bg-green-50",
+    hoverBgColor: "group-hover:bg-green-100",
   },
 ];

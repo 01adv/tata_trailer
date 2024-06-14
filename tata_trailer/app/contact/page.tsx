@@ -7,7 +7,7 @@ import Image from "next/image";
 const Page = () => {
   return (
     <div className="w-full">
-      <div className="relative w-full h-[65vh]  flex justify-center items-center">
+      <div className="relative w-full h-[65vh] flex justify-center items-center">
         <Image
           src="/assets/services.jpg" // Path to the image
           alt="Services Background"
@@ -16,9 +16,9 @@ const Page = () => {
           quality={100}
           className="z-0"
         />
-        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm "> </div>
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"> </div>
         <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <h2 className="font-semibold text-4xl sm:6xl md:text-8xl text-white text-center">
+          <h2 className="font-semibold text-4xl sm:text-6xl md:text-8xl text-white text-center">
             Contact Us
           </h2>
           <p className="font-medium text-orange-500 text-center">
@@ -37,16 +37,14 @@ const Page = () => {
           {contactCardsData.map((card, index) => (
             <div
               key={index}
-              className={`w-80 h-72 bg-white shadow-lg flex justify-center items-center overflow-hidden rounded-lg`}
+              className="w-80 h-32 p-4 border-[1px] border-slate-300 relative overflow-hidden group bg-white rounded-lg"
             >
-              <div className="text-center p-4">
-                <div className="flex justify-center items-center p-2">
-                  <card.icon className=" text-white bg-orange-500 p-4 rounded-full size-20" />
-                </div>
-                <p className="text-sm text-gray-700 overflow-hidden overflow-ellipsis">
-                  {card.description}
-                </p>
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-r from-orange-200 to-emerald-100 translate-y-[100%] group-hover:translate-y-[0%] transition-transform duration-300" />
+              <card.icon className="absolute z-10 -top-12 -right-12 text-9xl text-slate-100 group-hover:text-violet-400 group-hover:rotate-12 transition-transform duration-300" />
+              <card.icon className="mb-2 text-2xl text-orange-600 group-hover:text-white transition-colors relative z-10 duration-300" />
+              <p className="text-slate-700 group-hover:text-gray-800 relative z-10 duration-300">
+                {card.description}
+              </p>
             </div>
           ))}
         </div>
