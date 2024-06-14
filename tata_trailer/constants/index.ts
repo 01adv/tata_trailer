@@ -108,7 +108,7 @@ export const servicesData: Service[] = [
     bgColor: "text-orange-500",
     btnLink: "/services/industrial-machinery-transport",
     btnText: "Learn More",
-    imgSrc: "/assets/industrial-machinery-transport.jpg",
+    imgSrc: "/assets/abt.jpg",
     imgAlt: "Industrial Machinery Transport",
   },
   {
@@ -119,7 +119,7 @@ export const servicesData: Service[] = [
     bgColor: "text-blue-500",
     btnLink: "/services/heavy-equipment-transport",
     btnText: "Learn More",
-    imgSrc: "/assets/heavy-equipment-transport.jpg",
+    imgSrc: "/assets/abt2.jpg",
     imgAlt: "Heavy Equipment Transport",
   },
   {
@@ -130,7 +130,7 @@ export const servicesData: Service[] = [
     bgColor: "text-green-500",
     btnLink: "/services/tractor-crane-transport",
     btnText: "Learn More",
-    imgSrc: "/assets/tractor-crane-transport.jpg",
+    imgSrc: "/assets/abt3.jpg",
     imgAlt: "Tractor Crane Transport",
   },
   {
@@ -139,9 +139,9 @@ export const servicesData: Service[] = [
     description:
       "We specialize in the transport of building structures, utilizing advanced logistics planning to ensure safe and timely delivery.",
     bgColor: "text-red-500",
-    btnLink: "/services/building-structure-transport",
+    btnLink: "/services/abt",
     btnText: "Learn More",
-    imgSrc: "/assets/building-structure-transport.jpg",
+    imgSrc: "/assets/abt1.jpg",
     imgAlt: "Building Structure Transport",
   },
   {
@@ -150,9 +150,9 @@ export const servicesData: Service[] = [
     description:
       "Our services include the transport of garter channels, providing secure and efficient logistics solutions for these critical components.",
     bgColor: "text-yellow-500",
-    btnLink: "/services/garter-channel-transport",
+    btnLink: "/services/abt2",
     btnText: "Learn More",
-    imgSrc: "/assets/garter-channel-transport.jpg",
+    imgSrc: "/assets/abt1.jpg",
     imgAlt: "Garter Channel Transport",
   },
   {
@@ -163,7 +163,7 @@ export const servicesData: Service[] = [
     bgColor: "text-purple-500",
     btnLink: "/services/warehouse-shifting",
     btnText: "Learn More",
-    imgSrc: "/assets/warehouse-shifting.jpg",
+    imgSrc: "/assets/abt3.jpg",
     imgAlt: "Warehouse Shifting",
   },
   {
@@ -174,7 +174,7 @@ export const servicesData: Service[] = [
     bgColor: "text-pink-500",
     btnLink: "/services/office-moving",
     btnText: "Learn More",
-    imgSrc: "/assets/office-moving.jpg",
+    imgSrc: "/assets/abt2.jpg",
     imgAlt: "Office Moving",
   },
   {
@@ -185,7 +185,7 @@ export const servicesData: Service[] = [
     bgColor: "text-indigo-500",
     btnLink: "/services/house-shifting",
     btnText: "Learn More",
-    imgSrc: "/assets/house-shifting.jpg",
+    imgSrc: "/assets/abt.jpg",
     imgAlt: "House Shifting",
   },
   {
@@ -196,7 +196,7 @@ export const servicesData: Service[] = [
     bgColor: "text-teal-500",
     btnLink: "/services/international-shipping",
     btnText: "Learn More",
-    imgSrc: "/assets/international-shipping.jpg",
+    imgSrc: "/assets/abt1.jpg",
     imgAlt: "International Shipping",
   },
   {
@@ -207,7 +207,7 @@ export const servicesData: Service[] = [
     bgColor: "text-gray-500",
     btnLink: "/services/slug-iron-waste-transport",
     btnText: "Learn More",
-    imgSrc: "/assets/slug-iron-waste-transport.jpg",
+    imgSrc: "/assets/abt3.jpg",
     imgAlt: "Slug or Iron Waste Transport",
   },
 ];
