@@ -6,29 +6,28 @@ import { servicesData } from "@/constants";
 import { ServiceHeading } from "./heading";
 
 const ServiceSection: React.FC = () => {
-
   return (
     <div className="pt-16 pb-32 space-y-24">
       <div className="text-center">
-        <ServiceHeading/>
+        <ServiceHeading />
       </div>
-      
+
       <div className="container mx-auto space-y-14">
         {servicesData.map((service, index) => (
           <div
             key={index}
-            className={`flex flex-col md:flex-row ${
+            className={` h-screen flex flex-col md:flex-row ${
               index % 2 === 0 ? "md:flex-row-reverse" : ""
-            } items-center my-8`}
+            } items-center`}
           >
-            <div className="md:w-1/2 p-6">
+            <div className="md:w-1/2 p-6 h-[80vh] relative">
               <Image
                 src={service.imgSrc}
                 alt={service.imgAlt}
-                width={500}
-                height={300}
-                className="w-full h-auto rounded-lg"
+                fill
+                className="w-full  rounded-lg"
                 loading="lazy"
+                objectFit="cover"
               />
             </div>
             <div className="md:w-1/2 p-6 text-center md:text-left">

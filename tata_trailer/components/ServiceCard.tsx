@@ -1,7 +1,7 @@
-import { serviceCardData } from "@/constants";
+import { servicesData } from "@/constants";
+import Link from "next/link";
 import { CarouselSpacing } from "./CarouselSpacing"; // Import the CarouselSpacing component
 import { Button } from "./ui/button";
-import Link from "next/link";
 
 const ServiceCard = () => {
   // Array containing data for each service card
@@ -20,7 +20,7 @@ const ServiceCard = () => {
         </h2>
       </div>
       <div className="flex items-center justify-center mt-10 w-full">
-        <CarouselSpacing serviceData={serviceCardData}/>
+        <CarouselSpacing serviceData={servicesData}/>
       </div>
       <div className="p-9">
         <div className="flex items-center justify-center">

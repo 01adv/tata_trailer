@@ -108,7 +108,7 @@ export const servicesData: Service[] = [
     bgColor: "text-orange-500",
     btnLink: "/services/industrial-machinery-transport",
     btnText: "Learn More",
-    imgSrc: "/assets/abt.jpg",
+    imgSrc: "/assets/portfolio/5.jpeg",
     imgAlt: "Industrial Machinery Transport",
   },
   {
@@ -119,31 +119,32 @@ export const servicesData: Service[] = [
     bgColor: "text-blue-500",
     btnLink: "/services/heavy-equipment-transport",
     btnText: "Learn More",
-    imgSrc: "/assets/abt2.jpg",
+    imgSrc: "/assets/portfolio/15.jpeg",
     imgAlt: "Heavy Equipment Transport",
   },
   {
     icon: TruckIcon, // Replace with appropriate icon
-    title: "Tractor Crane Transport",
+    title: "Customized Logistics Services",
     description:
-      "Our expert team offers tractor crane transport solutions, facilitating the movement of these essential machines to your worksite.",
-    bgColor: "text-green-500",
-    btnLink: "/services/tractor-crane-transport",
-    btnText: "Learn More",
-    imgSrc: "/assets/abt3.jpg",
-    imgAlt: "Tractor Crane Transport",
-  },
-  {
-    icon: TruckIcon, // Replace with appropriate icon
-    title: "Building Structure Transport",
-    description:
-      "We specialize in the transport of building structures, utilizing advanced logistics planning to ensure safe and timely delivery.",
+      "We specialize in the transport of customized components, utilizing advanced logistics planning to ensure safe and timely delivery.",
     bgColor: "text-red-500",
     btnLink: "/services/abt",
     btnText: "Learn More",
-    imgSrc: "/assets/abt1.jpg",
-    imgAlt: "Building Structure Transport",
+    imgSrc: "/assets/portfolio/14.jpeg",
+    imgAlt: "aero plane transport image",
   },
+  {
+    icon: TruckIcon, // Replace with appropriate icon
+    title: "Agriculture Equipment Transport",
+    description:
+      "Our expert team offers tractor and other agriculture equipment transport solutions, facilitating the movement of these essential machines to your worksite.",
+    bgColor: "text-green-500",
+    btnLink: "/services/tractor-crane-transport",
+    btnText: "Learn More",
+    imgSrc: "/assets/portfolio/22.jpeg",
+    imgAlt: "Tractor Crane Transport",
+  },
+
   {
     icon: TruckIcon, // Replace with appropriate icon
     title: "Garter Channel Transport",
@@ -152,7 +153,7 @@ export const servicesData: Service[] = [
     bgColor: "text-yellow-500",
     btnLink: "/services/abt2",
     btnText: "Learn More",
-    imgSrc: "/assets/abt1.jpg",
+    imgSrc: "/assets/portfolio/23.jpeg",
     imgAlt: "Garter Channel Transport",
   },
   {
@@ -163,7 +164,7 @@ export const servicesData: Service[] = [
     bgColor: "text-purple-500",
     btnLink: "/services/warehouse-shifting",
     btnText: "Learn More",
-    imgSrc: "/assets/abt3.jpg",
+    imgSrc: "/assets/portfolio/27.jpg",
     imgAlt: "Warehouse Shifting",
   },
   {
@@ -174,7 +175,7 @@ export const servicesData: Service[] = [
     bgColor: "text-pink-500",
     btnLink: "/services/office-moving",
     btnText: "Learn More",
-    imgSrc: "/assets/abt2.jpg",
+    imgSrc: "/assets/portfolio/29.jpg",
     imgAlt: "Office Moving",
   },
   {
@@ -185,7 +186,7 @@ export const servicesData: Service[] = [
     bgColor: "text-indigo-500",
     btnLink: "/services/house-shifting",
     btnText: "Learn More",
-    imgSrc: "/assets/abt.jpg",
+    imgSrc: "/assets/portfolio/28.jpg",
     imgAlt: "House Shifting",
   },
   {
@@ -196,7 +197,7 @@ export const servicesData: Service[] = [
     bgColor: "text-teal-500",
     btnLink: "/services/international-shipping",
     btnText: "Learn More",
-    imgSrc: "/assets/abt1.jpg",
+    imgSrc: "/assets/portfolio/30.jpg",
     imgAlt: "International Shipping",
   },
   {
@@ -207,7 +208,7 @@ export const servicesData: Service[] = [
     bgColor: "text-gray-500",
     btnLink: "/services/slug-iron-waste-transport",
     btnText: "Learn More",
-    imgSrc: "/assets/abt3.jpg",
+    imgSrc: "/assets/abt.jpg",
     imgAlt: "Slug or Iron Waste Transport",
   },
 ];

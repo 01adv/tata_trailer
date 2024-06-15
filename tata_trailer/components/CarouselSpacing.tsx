@@ -12,7 +12,7 @@ import Link from "next/link";
 
 // Service card item component
 const ServiceCardItem = ({ service }: any) => {
-  const { title, description, buttonText, imgSrc } = service;
+  const { title, description, btnText, imgSrc } = service;
 
   return (
     <div className="p-1">
@@ -37,7 +37,7 @@ const ServiceCardItem = ({ service }: any) => {
                 <p>{description}</p>
                 <div className="w-full text-center text-base font-semibold">
                   <p className="text-lg">
-                    <Link href="#">{buttonText} &rarr;</Link>
+                    <Link href="/services">{btnText} &rarr;</Link>
                   </p>
                 </div>
               </div>
