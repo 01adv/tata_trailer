@@ -1,7 +1,5 @@
 import Image from "next/image";
 import { HeroHeading } from "./heading";
-import Partners from "./Partners";
-import HorizontalStrip from "./HorizontalStrip";
 
 const Hero2 = () => {
   return (
