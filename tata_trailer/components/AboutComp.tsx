@@ -58,7 +58,7 @@ const AboutComp = () => {
                 <h2 className="font-serif mb-3 md:mb-5 text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-yellow-500 to-green-500">
                   India&apos;s Leading Contract Logistics Provider
                 </h2>
-                <p className="    ">
+                <p className="">
                   Tata Trailer Service and Transport, established over a decade
                   ago, is a renowned name in the logistics and transport
                   industry in India. As fleet owners and transport contractors,
@@ -67,24 +67,24 @@ const AboutComp = () => {
                   Our services are available nationwide, operating on any road,
                   at any time, and to any location in India.
                 </p>
-                <p className=" mt-4">
+                <p className="mt-4">
                   We pride ourselves on our expertise in handling heavy and
                   bulky consignments, utilizing our own fleet of vehicles. Our
                   commitment to excellence has earned us a reputation for
                   reliability and efficiency in the transportation of oversized
                   cargo, ensuring timely delivery and customer satisfaction.
                 </p>
-                <p className="     mt-4">
+                <p className="mt-4">
                   Our services extend beyond transportation; we offer trailer
                   services, ensuring that your goods are delivered securely and
                   efficiently. With a focus on safety and reliability, we
                   provide comprehensive solutions for transporting goods of all
                   sizes and types.
                 </p>
-                <p className="     mt-4">
+                <p className="mt-4">
                   Tata Trailer Service and Transport is committed to delivering
                   superior service and solutions tailored to meet the unique
-                  needs of each customer. Whether it's a one-time shipment or
+                  needs of each customer. Whether it is a one-time shipment or
                   ongoing logistics support, we are dedicated to exceeding your
                   expectations.
                 </p>
