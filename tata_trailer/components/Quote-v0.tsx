@@ -63,7 +63,7 @@ export default function QuoteV0() {
 
   const handleWhatsAppSubmit = () => {
     const message = `Name: ${formData.name}\nEmail: ${formData.email}\nAddress: ${formData.address}\nPhone: ${formData.phone}\nPickup Address: ${formData.pickupAddress}\nDelivery Address: ${formData.deliveryAddress}\nweight: ${formData.weight}\nDimensions: ${formData.dimensions}\nAdditional Info: ${formData.additionalInfo}`;
-    const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/9761303561?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
     setIsModalOpen(false);
   };

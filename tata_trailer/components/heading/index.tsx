@@ -44,9 +44,9 @@ export const HeroHeading = () => {
           className="text-orange-500 uppercase font-mono font-bold text-xs sm:text-base mt-4"
           style={{ letterSpacing: "0.4rem" }}
         >
-          Intelligent designed{" "}
-          <span className="text-white">transportation solutions</span>
-          <hr className=" border-2 bg-white" />
+          Fleet Owners{" "}
+          <span className="text-white"> & Transport Contractors</span>
+          <hr className=" border-1 bg-white" />
         </p>
       )}
     </header>
@@ -99,9 +99,10 @@ export const TeamMemberHeading = () => {
       <h2 className="font-serif text-center text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-yellow-500 to-green-500">
         Our Team Members
       </h2>
-      <p className="font-light text-gray-500 text-base md:text-lg dark:text-gray-400">
-        Explore the whole collection of open-source web components and elements
-        built with the utility classNames from Tailwind
+      <p className="font-light text-gray-500 text-base md:text-md mt-3 dark:text-gray-400">
+        Tata Trailor Service and Transport is a team of dedicated professionals, we are
+        fleet owners and transport contractors, with expertise in trailer
+        services nationwide. 
       </p>
     </animated.div>
   );

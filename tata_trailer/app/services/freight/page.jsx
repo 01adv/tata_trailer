@@ -34,7 +34,7 @@ const page = () => {
             </div>
             <div className="rounded-lg py-10">
               <p className=" text-gray-600 pb-4">
-                At Tata Trailer Transport we pride ourselves on being a reliable
+                At Tata Trailor Transport we pride ourselves on being a reliable
                 and efficient transportation services provider. With many years
                 of experience in the industry we have built a reputation for{" "}
                 <span className=" text-orange-500 font-bold">

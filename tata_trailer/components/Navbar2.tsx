@@ -65,26 +65,39 @@ const Navbar2 = () => {
 
   return (
     <header className="fixed w-full z-50">
-      <div className="hidden md:block">
+      <div className="block">
         <div
           className={`transition-all duration-300  px-4 md:px-12 py-2 flex justify-between items-center ${
-            isScrolled ? "hidden" : "block glassmorphism-black"
+            isScrolled ? "hidden" : "block bg-black/70"
           }`}
         >
-          <div className=" w-full flex md:flex-row md:items-center justify-end md:space-x-8 text-sm font-bold text-white">
-            <span className="flex gap-1">
-              <MapPinIcon size={18} /> Pantnagar, 263153, Uttarakhand
-            </span>
-            <span className="flex gap-1">
-              <PhoneCall size={18} />
-              +91 9876 543210
-            </span>
-            <span className="flex gap-1">
-              <Mail size={18} /> tatatrailor@gmail.com
-            </span>
+          <div className="w-full flex md:flex-row md:items-center justify-end md:space-x-8 text-sm font-bold  space-x-4 text-black/70">
+            <Link href={"/contact/#map"} className="flex gap-1 ">
+              <MapPinIcon size={18} fill="lime" color="black" />
+              <p className="hidden md:block text-white">
+                Near Hazi Parking, Opp: Mahindra & Mahindra Ltd Kichha Road
+                Lalpur Rudrapur 263148
+              </p>
+            </Link>
+
+            <Link href="tel:+919761303561" className=" flex gap-1 ">
+              <PhoneCall size={18}  color="white"/>
+              <p className="hidden md:block text-white">+91 9761 303561</p>
+            </Link>
+
+            <Link
+              href="mailto:tata.trailor.service@gmail.com"
+              className=" flex gap-1"
+            >
+              <Mail size={18} fill="red" color="white"/>
+              <p className="hidden md:block text-white">
+                tata.trailor.service@gmail.com
+              </p>
+            </Link>
           </div>
         </div>
       </div>
+
       <div
         className={`flex justify-between items-center px-4 md:px-12 transition-all duration-300 ${
           isScrolled
@@ -94,10 +107,13 @@ const Navbar2 = () => {
       >
         <Link href="/">
           <h1
-            className={`font-extrabold ${isScrolled ? "text-xl" : "text-2xl"}`}
+            className={`font-extrabold ${isScrolled ? "text-xl" : "text-2xl"}  leading-5`}
           >
             <span className="text-green-500">TATA</span>{" "}
             <span className="text-orange-400">TRAILOR</span>
+            <br  />
+            <span className="font-mono text-sm">Service and Transport &reg;</span>
+
           </h1>
         </Link>
         <nav className="relative">
@@ -109,9 +125,14 @@ const Navbar2 = () => {
             <LucideMenu />
           </button>
           <ul
-            className={`fixed left-0 right-0 min-h-screen flex flex-col justify-start items-start space-y-4 p-4 transform transition-transform duration-300 ${
-              open ? "translate-x-0 bg-gray-100 text-black" : "-translate-x-full"
-            } md:relative md:flex md:flex-row md:min-h-0 md:space-y-0 md:space-x-6 md:p-0 md:translate-x-0 text-lg`}
+            className={`fixed left-0 right-0 min-h-screen flex flex-col justify-start items-start space-y-4 p-4 
+              
+              
+              transform transition-transform duration-300 ${
+                open
+                  ? "translate-x-0 bg-gray-100 text-black"
+                  : "-translate-x-full"
+              } md:relative md:flex md:flex-row md:min-h-0 md:space-y-0 md:space-x-6 md:p-0 md:translate-x-0 text-lg`}
           >
             {navItems.map((item, index) => {
               const isActive =

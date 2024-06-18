@@ -1,15 +1,19 @@
 import React from "react";
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { companyLinks, legalLinks, serviceLinks, socialLinks } from "@/constants";
+import {
+  companyLinks,
+  legalLinks,
+  serviceLinks,
+  socialLinks,
+} from "@/constants";
 
 const Footer2 = () => {
-  
   return (
     <footer>
       <div className="pt-16">
         <div className="flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-2">
-          <div className="rounded-2xl bg-orange-200 w-full lg:w-1/4 p-8">
+          <div className="rounded-2xl bg-orange-200 w-full lg:w-2/5 p-8">
             <h2 className="mb-6 text-3xl font-semibold">Connect with us!</h2>
 
             <table className="mb-4 text-sm text-left text-gray-600">
@@ -21,7 +25,10 @@ const Footer2 = () => {
                   >
                     Email :
                   </th>
-                  <td className="px-2 py-2">info@mail.com</td>
+                  <td className="px-2 py-2">
+                    <p>tata.trailor.service@gmail.com</p>
+                    <p>tatatrailorservice27@gmail.com</p>
+                  </td>
                 </tr>
                 <tr className="">
                   <th
@@ -31,9 +38,22 @@ const Footer2 = () => {
                     Address :
                   </th>
                   <td className="px-2 py-2">
-                    Sidcul, Pant Nagar,
+                  Near Hazi Parking, Opp: Mahindra & Mahindra Ltd Kichha Road
+                  Lalpur Rudrapur 263148
                     <br />
                     263153, Uttarakhand, India
+                  </td>
+                </tr>
+                <tr className="">
+                  <th
+                    scope="row"
+                    className="px-2 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  >
+                    Phone :
+                  </th>
+                  <td className="px-2 py-2">
+                    <p>9761303561, 9058206080</p>
+                    <p>9761999097, 8375964014</p>
                   </td>
                 </tr>
               </tbody>
@@ -50,7 +70,7 @@ const Footer2 = () => {
                   rel="noreferrer"
                 >
                   <span className="sr-only">{link.label}</span>
-                  <link.icon/>
+                  <link.icon />
                 </Link>
               ))}
             </div>
@@ -81,11 +101,11 @@ const Footer2 = () => {
             <div className="flex flex-row justify-between">
               <div>
                 <p className="font-medium">Service</p>
-                <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-600">
+                <nav className="grid grid-cols-2 mt-4 text-sm text-gray-600">
                   {serviceLinks.map((link, index) => (
                     <Link
                       key={index}
-                      className="hover:opacity-75"
+                      className="hover:opacity-75 py-2"
                       href={link.href}
                     >
                       {link.label}
@@ -109,7 +129,7 @@ const Footer2 = () => {
                 </nav>
               </div>
 
-              <div>
+              {/* <div>
                 <p className="font-medium">Legal</p>
                 <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-600">
                   {legalLinks.map((link, index) => (
@@ -122,10 +142,10 @@ const Footer2 = () => {
                     </Link>
                   ))}
                 </nav>
-              </div>
+              </div> */}
             </div>
             <p className="mt-8 text-sm text-gray-800">
-              Copyright © 2024 Tata Trailer Transport, All rights reserved.
+              Copyright © 2024 Tata Trailor Transport, All rights reserved.
             </p>
           </div>
         </div>

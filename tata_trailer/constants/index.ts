@@ -12,21 +12,21 @@ export const testimonials = [
   {
     title: "Outstanding Service and Reliability",
     content:
-      "Tata Trailer Logistics has provided us with unparalleled service, ensuring our goods are delivered on time, every time.",
+      "Tata Trailor Logistics has provided us with unparalleled service, ensuring our goods are delivered on time, every time.",
     name: "John Doe",
     designation: "Operations Manager at XYZ Manufacturing",
   },
   {
     title: "Exceptional Efficiency",
     content:
-      "The efficiency and professionalism of Tata Trailer Logistics have significantly improved our supply chain operations.",
+      "The efficiency and professionalism of Tata Trailor Logistics have significantly improved our supply chain operations.",
     name: "Jane Smith",
     designation: "Supply Chain Director at ABC Retail",
   },
   {
     title: "Reliable and Cost-Effective",
     content:
-      "Tata Trailer Logistics offers reliable and cost-effective solutions, making them our preferred logistics partner.",
+      "Tata Trailor Logistics offers reliable and cost-effective solutions, making them our preferred logistics partner.",
     name: "Michael Brown",
     designation: "CEO at Global Logistics Inc.",
   },
@@ -56,17 +56,21 @@ export const socialLinks: SocialLink[] = [
 ];
 
 export const serviceLinks = [
-  { href: "", label: "Personal Account" },
-  { href: "", label: "Join Account" },
-  { href: "", label: "Wealth Account" },
-  { href: "", label: "Team Account" },
+  { href: "/services", label: "Industrial Machinery Transport" },
+  { href: "/services", label: "Heavy Equipment Transport" },
+  { href: "/services", label: "Customized Logistics Services" },
+  { href: "/services", label: "Agriculture Equipment Transport" },
+  { href: "/services", label: "Garter Channel Transport" },
+  { href: "/services", label: "Warehouse Shifting" },
+  { href: "/services", label: "House Shifting" },
+  { href: "/services", label: "International Shipping" },
+  { href: "/services", label: "Slug or Iron Waste Transport" },
 ];
 
 export const companyLinks = [
-  { href: "", label: "About Us" },
-  { href: "", label: "Blog & News" },
-  { href: "", label: "Careers" },
-  { href: "", label: "Help" },
+  { href: "/about", label: "About Us" },
+  { href: "/contact", label: "Contact Us" },
+  { href: "/#quote", label: "Get a Quote" },
 ];
 
 export const legalLinks = [
@@ -219,25 +223,39 @@ export const servicesData: Service[] = [
 import { MailIcon, MapPinIcon, PhoneCall } from "lucide-react";
 interface Contact {
   icon: LucideIcon;
-  description: string;
+  description: {
+    first: string;
+    second?: string;
+    third?: string;
+    fourth?: string;
+
+  };
 }
 
 export const contactCardsData: Contact[] = [
   {
     icon: MailIcon,
-    description:
-      'tatatrailor@gmail.com    support@tatatrailor.com'
+    description: {
+      first: "tata.trailor.service@gmail.com",
+      second: "tatatrailorservice27@gmail.com",
+    },
   },
   {
     icon: MapPinIcon,
-    description:
-      "Sidcul Industrial Area, Pantnagar, Udham Singh Nagar 263153, Uttarakhand India",
+    description: {
+      first: "Near Hazi Parking, Opp: Mahindra & Mahindra Ltd Kichha Road Lalpur Rudrapur 263148",
+    },
   },
   {
     icon: PhoneCall,
 
-    description:
-      "Call us anytime: +91 98200 00000  +91 98200 00000  +91 98200 00000",
+    description: {
+      first:
+        "9761303561,",
+      second: "9058206080,",
+      third: "8375964014,",
+      fourth: "9761999097"
+    },
   },
 ];
 
@@ -294,44 +312,44 @@ export const serviceCardData = [
 
 export const FaqData = [
   {
-    question: "What services does Tata Trailer offer?",
+    question: "What services does Tata Trailor offer?",
     answer:
-      "Tata Trailer provides a comprehensive range of transport and logistics services including freight transportation, warehousing, distribution, supply chain management, and specialized transport solutions for oversized or hazardous materials.",
+      "Tata Trailor provides a comprehensive range of transport and logistics services including freight transportation, warehousing, distribution, supply chain management, and specialized transport solutions for oversized or hazardous materials.",
   },
   {
-    question: "How can I book a transportation service with Tata Trailer?",
+    question: "How can I book a transportation service with Tata Trailor?",
     answer:
-      "Booking a transportation service with Tata Trailer is easy. You can visit our website and fill out the online booking form, or contact our customer service team directly via phone or email to discuss your specific needs and schedule a service.",
+      "Booking a transportation service with Tata Trailor is easy. You can visit our website and fill out the online booking form, or contact our customer service team directly via phone or email to discuss your specific needs and schedule a service.",
   },
   {
-    question: "What areas does Tata Trailer serve?",
+    question: "What areas does Tata Trailor serve?",
     answer:
-      "Tata Trailer offers nationwide services across India. We have an extensive network that allows us to transport goods to and from any location within the country. We also offer international shipping services to selected destinations.",
+      "Tata Trailor offers nationwide services across India. We have an extensive network that allows us to transport goods to and from any location within the country. We also offer international shipping services to selected destinations.",
   },
   {
-    question: "How does Tata Trailer ensure the safety of transported goods?",
+    question: "How does Tata Trailor ensure the safety of transported goods?",
     answer:
-      "The safety of your goods is our top priority. Tata Trailer uses state-of-the-art tracking systems, well-maintained vehicles, and trained drivers to ensure secure and timely delivery. Additionally, we offer insurance options to cover any unforeseen circumstances during transit.",
+      "The safety of your goods is our top priority. Tata Trailor uses state-of-the-art tracking systems, well-maintained vehicles, and trained drivers to ensure secure and timely delivery. Additionally, we offer insurance options to cover any unforeseen circumstances during transit.",
   },
   {
-    question: "What types of goods can Tata Trailer transport?",
+    question: "What types of goods can Tata Trailor transport?",
     answer:
-      "Tata Trailer can transport a wide variety of goods, including general merchandise, perishable items, oversized equipment, hazardous materials, and more. Our fleet is equipped to handle diverse transportation needs, ensuring that your cargo is delivered safely and efficiently.",
+      "Tata Trailor can transport a wide variety of goods, including general merchandise, perishable items, oversized equipment, hazardous materials, and more. Our fleet is equipped to handle diverse transportation needs, ensuring that your cargo is delivered safely and efficiently.",
   },
   {
-    question: "How can I track my shipment with Tata Trailer?",
+    question: "How can I track my shipment with Tata Trailor?",
     answer:
-      "You can easily track your shipment with Tata Trailer using our online tracking system. Simply enter your tracking number on our website to get real-time updates on the status and location of your shipment. You can also contact our customer service team for assistance.",
+      "You can easily track your shipment with Tata Trailor using our online tracking system. Simply enter your tracking number on our website to get real-time updates on the status and location of your shipment. You can also contact our customer service team for assistance.",
   },
   {
-    question: "What payment methods does Tata Trailer accept?",
+    question: "What payment methods does Tata Trailor accept?",
     answer:
-      "Tata Trailer accepts a variety of payment methods for your convenience. You can pay using credit cards, debit cards, bank transfers, and online payment platforms. For corporate clients, we also offer invoicing and credit terms upon approval.",
+      "Tata Trailor accepts a variety of payment methods for your convenience. You can pay using credit cards, debit cards, bank transfers, and online payment platforms. For corporate clients, we also offer invoicing and credit terms upon approval.",
   },
   {
-    question: "How can I contact Tata Trailer for customer support?",
+    question: "How can I contact Tata Trailor for customer support?",
     answer:
-      "Our customer support team is available to assist you with any questions or concerns. You can reach us by phone at [+91 96396 58534], email at [tatatrailor@gmail.com], or through our website's contact form. We are committed to providing prompt and efficient support to all our clients.",
+      "Our customer support team is available to assist you with any questions or concerns. You can reach us by phone at [+91 9761 303561], email at [tata.trailor.service@gmail.com], or through our website's contact form. We are committed to providing prompt and efficient support to all our clients.",
   },
 ];
 
