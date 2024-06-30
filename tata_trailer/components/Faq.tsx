@@ -5,7 +5,7 @@ import { FaqHeading } from "./heading";
 
 const Faq = () => {
   return (
-    <div className=" w-full py-32">
+    <div className=" w-full my-32">
       <div className=" w-full flex relative">
         <div className=" max-w-7xl mx-auto z-20 px-20 py-32">
           <FaqHeading />

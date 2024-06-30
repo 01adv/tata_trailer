@@ -10,8 +10,8 @@ import {
 
 const Footer2 = () => {
   return (
-    <footer>
-      <div className="pt-16">
+    <footer className="left-0 bottom-0 mt-40">
+      <div className="pt-32">
         <div className="flex flex-col space-x-0 space-y-2 md:flex-row md:space-y-0 md:space-x-2">
           <div className="rounded-2xl bg-orange-200 w-full lg:w-2/5 p-8">
             <h2 className="mb-6 text-3xl font-semibold">Connect with us!</h2>
@@ -38,8 +38,8 @@ const Footer2 = () => {
                     Address :
                   </th>
                   <td className="px-2 py-2">
-                  Near Hazi Parking, Opp: Mahindra & Mahindra Ltd Kichha Road
-                  Lalpur Rudrapur 263148
+                    Near Hazi Parking, Opp: Mahindra & Mahindra Ltd Kichha Road
+                    Lalpur Rudrapur 263148
                     <br />
                     263153, Uttarakhand, India
                   </td>
@@ -102,7 +102,7 @@ const Footer2 = () => {
             <div className="flex flex-row justify-between">
               <div>
                 <p className="font-medium">Service</p>
-                <nav className="grid grid-cols-2 mt-4 text-xs  sm:text-sm text-gray-600">
+                <nav className="grid grid-cols-2 mt-4 text-xs sm:text-sm text-gray-600 text-balance ">
                   {serviceLinks.map((link, index) => (
                     <Link
                       key={index}
@@ -121,7 +121,7 @@ const Footer2 = () => {
                   {companyLinks.map((link, index) => (
                     <Link
                       key={index}
-                      className="hover:opacity-75"
+                      className="hover:opacity-75 py-2"
                       href={link.href}
                     >
                       {link.label}
@@ -129,7 +129,6 @@ const Footer2 = () => {
                   ))}
                 </nav>
               </div>
-
             </div>
             <p className="mt-8 text-sm text-gray-800">
               Copyright © 2024 Tata Trailor Transport, All rights reserved.

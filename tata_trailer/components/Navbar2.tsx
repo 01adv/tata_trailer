@@ -71,7 +71,7 @@ const Navbar2 = () => {
             isScrolled ? "hidden" : "block bg-black/70"
           }`}
         >
-          <div className="w-full flex md:flex-row md:items-center justify-end md:space-x-8 text-sm font-bold  space-x-4 text-black/70">
+          <div className="w-full flex md:flex-row md:items-center justify-end md:space-x-8 text-sm font-mono tracking-tighter  space-x-4 text-black/70">
             <Link href={"/contact/#map"} className="flex gap-1 ">
               <MapPinIcon size={18} fill="lime" color="black" />
               <p className="hidden md:block text-white">

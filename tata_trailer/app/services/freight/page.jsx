@@ -1,88 +1,105 @@
-import HorizontalStrip from "@/components/HorizontalStrip";
-import Service1 from "@/components/Service1";
-import { Button } from "@/components/ui/button";
-import { Check } from "lucide-react";
+
+const dummyContent = [
+  {
+    title: "Lorem Ipsum Dolor Sit Amet",
+    description: (
+      <>
+        <p>
+          Sit duis est minim proident non nisi velit non consectetur. Esse
+          adipisicing laboris consectetur enim ipsum reprehenderit eu deserunt
+          Lorem ut aliqua anim do. Duis cupidatat qui irure cupidatat incididunt
+          incididunt enim magna id est qui sunt fugiat. Laboris do duis pariatur
+          fugiat Lorem aute sit ullamco. Qui deserunt non reprehenderit dolore
+          nisi velit exercitation Lorem qui do enim culpa. Aliqua eiusmod in
+          occaecat reprehenderit laborum nostrud fugiat voluptate do Lorem culpa
+          officia sint labore. Tempor consectetur excepteur ut fugiat veniam
+          commodo et labore dolore commodo pariatur.
+        </p>
+        <p>
+          Dolor minim irure ut Lorem proident. Ipsum do pariatur est ad ad
+          veniam in commodo id reprehenderit adipisicing. Proident duis
+          exercitation ad quis ex cupidatat cupidatat occaecat adipisicing.
+        </p>
+        <p>
+          Tempor quis dolor veniam quis dolor. Sit reprehenderit eiusmod
+          reprehenderit deserunt amet laborum consequat adipisicing officia qui
+          irure id sint adipisicing. Adipisicing fugiat aliqua nulla nostrud.
+          Amet culpa officia aliquip deserunt veniam deserunt officia
+          adipisicing aliquip proident officia sunt.
+        </p>
+      </>
+    ),
+    badge: "React",
+    image: "/assets/portfolio/10.jpeg",
+  },
+  {
+    title: "Lorem Ipsum Dolor Sit Amet",
+    description: (
+      <>
+        <p>
+          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
+          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
+          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
+          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
+          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
+          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+        </p>
+        <p>
+          In dolore veniam excepteur eu est et sunt velit. Ipsum sint esse
+          veniam fugiat esse qui sint ad sunt reprehenderit do qui proident
+          reprehenderit. Laborum exercitation aliqua reprehenderit ea sint
+          cillum ut mollit.
+        </p>
+      </>
+    ),
+    badge: "Changelog",
+    image: "/assets/portfolio/11.jpeg",
+  },
+];
+
+import Image from "next/image";
+import React from "react";
 
 const page = () => {
   return (
-    <div className=" w-full">
-      <div className=" w-full h-[65vh] bg-rose-200 flex justify-center items-center">
-        <div>
-          <h2 className=" font-semibold text-6xl text-white text-center">
-            Service Details
+    <div className="">
+      <div className="relative w-full h-[65vh]  flex justify-center items-center">
+        <Image
+          src="/assets/services.jpg" // Path to the image
+          alt="Services Background"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+          className="z-0"
+        />
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm "> </div>
+        <div className="absolute inset-0 flex flex-col items-center justify-center">
+          <h2 className="font-semibold text-4xl sm:6xl md:text-8xl text-white text-center">
+            Freight Services
           </h2>
-          <p className=" font-medium text-orange-500 text-center">
-            Freight Forwarding Services
+          <p className="font-medium text-orange-500 text-center">
+            Innovative Logistic Services
           </p>
         </div>
       </div>
-      <div className=" py-32">
-        <div className="bg-emerald-100 py-20 mb-10">
-          <div className=" max-w-7xl mx-auto  grid grid-cols-1 lg:grid-cols-2 px-10">
-            <div className=" py-10 rounded-lg">
-              <h1 className="text-6xl text-start text-gray-800">
-                <span className=" text-orange-500 font-bold">
-                  We are Great at
-                </span>{" "}
-                Freight forwarding and Management
-              </h1>
-              <div className="flex justify-start items-center pt-10">
-                <Button>
-                  Contact Us
-                </Button>
-              </div>
-            </div>
-            <div className="rounded-lg py-10">
-              <p className=" text-gray-600 pb-4">
-                At Tata Trailor Transport we pride ourselves on being a reliable
-                and efficient transportation services provider. With many years
-                of experience in the industry we have built a reputation for{" "}
-                <span className=" text-orange-500 font-bold">
-                  delivering quality services
-                </span>
-                to our clients, and we go above and beyond to exceed
-                expectations.
-              </p>
-              <hr className="border-1 border-gray-300 shadow-xl shadow-gray-800" />
-              <ul className="flex flex-wrap gap-6 justify-evenly pt-5">
-                <li className="flex items-center gap-2 font-semibold">
-                  <span className=" bg-green-500 rounded-full p-1 text-white">
-                    <Check className=" size-4" />
-                  </span>
-                  Speed of Transportation
-                </li>
-                <li className="flex items-center gap-2 font-semibold">
-                  <span className=" bg-green-500 rounded-full p-1 text-white">
-                    <Check className=" size-4" />
-                  </span>
-                  Network of Destinations
-                </li>
-                <li className="flex items-center gap-2 font-semibold">
-                  <span className=" bg-green-500 rounded-full p-1 text-white">
-                    <Check className=" size-4" />
-                  </span>
-                  Reduced Storage Requirements
-                </li>
-                <li className="flex items-center gap-2 font-semibold">
-                  <span className=" bg-green-500 rounded-full p-1 text-white">
-                    <Check className=" size-4" />
-                  </span>
-                  Cost-effective Transportation
-                </li>
-                <li className="flex items-center gap-2 font-semibold">
-                  <span className=" bg-green-500 rounded-full p-1 text-white">
-                    <Check className=" size-4" />
-                  </span>
-                  Highly Reliable Service
-                </li>
-              </ul>
+      <div className="pt-40 max-w-7xl mx-auto">
+        {dummyContent.map((item, index) => (
+          <div key={`content-${index}`} className="mb-10">
+            <p className="text-xl mb-4">{item.title}</p>
+            <div className="text-sm  prose prose-sm dark:prose-invert">
+              {item?.image && (
+                <Image
+                  src={item.image}
+                  alt="blog thumbnail"
+                  height="1000"
+                  width="1000"
+                  className="rounded-lg mb-10 object-cover"
+                />
+              )}
+              {item.description}
             </div>
           </div>
-        </div>
-        <div className="py-20">
-          <HorizontalStrip />
-        </div>
-        <Service1 />
+        ))}
       </div>
     </div>
   );

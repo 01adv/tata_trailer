@@ -56,15 +56,16 @@ export const socialLinks: SocialLink[] = [
 ];
 
 export const serviceLinks = [
-  { href: "/services", label: "Industrial Machinery Transport" },
-  { href: "/services", label: "Heavy Equipment Transport" },
-  { href: "/services", label: "Customized Logistics Services" },
-  { href: "/services", label: "Agriculture Equipment Transport" },
-  { href: "/services", label: "Garter Channel Transport" },
-  { href: "/services", label: "Warehouse Shifting" },
-  { href: "/services", label: "House Shifting" },
-  { href: "/services", label: "International Shipping" },
-  { href: "/services", label: "Slug or Iron Waste Transport" },
+  { href: "/services/industrial", label: "Industrial Machinery Transport" },
+  { href: "/services/heavy", label: "Heavy Equipment Transport" },
+  { href: "/services/customized", label: "Customized Logistics Services" },
+  { href: "/services/agriculture", label: "Agriculture Equipment Transport" },
+  { href: "/services/gutter", label: "Gutter Channel Transport" },
+  { href: "/services/warehouse", label: "Warehouse Shifting" },
+  { href: "/services/house", label: "House Shifting" },
+  { href: "/services/shipping", label: "International Shipping" },
+  { href: "/services/slug", label: "Slug or Iron Waste Transport" },
+  { href: "/services/office", label: "Office Moving" },
 ];
 
 export const companyLinks = [
@@ -110,7 +111,7 @@ export const servicesData: Service[] = [
     description:
       "Our logistics company specializes in the transport of all types of industrial machinery, ensuring safe and efficient delivery to your desired location.",
     bgColor: "text-orange-500",
-    btnLink: "/services/industrial-machinery-transport",
+    btnLink: "/services/industrial",
     btnText: "Learn More",
     imgSrc: "/assets/portfolio/5.jpeg",
     imgAlt: "Industrial Machinery Transport",
@@ -121,7 +122,7 @@ export const servicesData: Service[] = [
     description:
       "We provide reliable heavy equipment transport services, handling oversized loads with precision and care to meet your project requirements.",
     bgColor: "text-blue-500",
-    btnLink: "/services/heavy-equipment-transport",
+    btnLink: "/services/heavy",
     btnText: "Learn More",
     imgSrc: "/assets/portfolio/15.jpeg",
     imgAlt: "Heavy Equipment Transport",
@@ -132,7 +133,7 @@ export const servicesData: Service[] = [
     description:
       "We specialize in the transport of customized components, utilizing advanced logistics planning to ensure safe and timely delivery.",
     bgColor: "text-red-500",
-    btnLink: "/services/abt",
+    btnLink: "/services/customized",
     btnText: "Learn More",
     imgSrc: "/assets/portfolio/14.jpeg",
     imgAlt: "aero plane transport image",
@@ -143,7 +144,7 @@ export const servicesData: Service[] = [
     description:
       "Our expert team offers tractor and other agriculture equipment transport solutions, facilitating the movement of these essential machines to your worksite.",
     bgColor: "text-green-500",
-    btnLink: "/services/tractor-crane-transport",
+    btnLink: "/services/agriculture",
     btnText: "Learn More",
     imgSrc: "/assets/portfolio/22.jpeg",
     imgAlt: "Tractor Crane Transport",
@@ -151,14 +152,14 @@ export const servicesData: Service[] = [
 
   {
     icon: TruckIcon, // Replace with appropriate icon
-    title: "Garter Channel Transport",
+    title: "Gutter Channel Transport",
     description:
-      "Our services include the transport of garter channels, providing secure and efficient logistics solutions for these critical components.",
+      "Our services include the transport of gutter channels, providing secure and efficient logistics solutions for these critical components.",
     bgColor: "text-yellow-500",
-    btnLink: "/services/abt2",
+    btnLink: "/services/gutter",
     btnText: "Learn More",
     imgSrc: "/assets/portfolio/23.jpeg",
-    imgAlt: "Garter Channel Transport",
+    imgAlt: "Gutter Channel Transport",
   },
   {
     icon: TruckIcon, // Replace with appropriate icon
@@ -166,7 +167,7 @@ export const servicesData: Service[] = [
     description:
       "We offer comprehensive warehouse shifting services, managing the entire process to minimize downtime and ensure a smooth transition.",
     bgColor: "text-purple-500",
-    btnLink: "/services/warehouse-shifting",
+    btnLink: "/services/warehouse",
     btnText: "Learn More",
     imgSrc: "/assets/portfolio/27.jpg",
     imgAlt: "Warehouse Shifting",
@@ -177,7 +178,7 @@ export const servicesData: Service[] = [
     description:
       "Our office moving services are designed to handle the relocation of your business with minimal disruption, ensuring all assets are transported safely.",
     bgColor: "text-pink-500",
-    btnLink: "/services/office-moving",
+    btnLink: "/services/office",
     btnText: "Learn More",
     imgSrc: "/assets/portfolio/29.jpg",
     imgAlt: "Office Moving",
@@ -188,7 +189,7 @@ export const servicesData: Service[] = [
     description:
       "We provide professional house shifting services, ensuring all your belongings are transported securely to your new home.",
     bgColor: "text-indigo-500",
-    btnLink: "/services/house-shifting",
+    btnLink: "/services/house",
     btnText: "Learn More",
     imgSrc: "/assets/portfolio/28.jpg",
     imgAlt: "House Shifting",
@@ -199,7 +200,7 @@ export const servicesData: Service[] = [
     description:
       "Our international shipping services are tailored to meet your global logistics needs, offering reliable and efficient transport solutions worldwide.",
     bgColor: "text-teal-500",
-    btnLink: "/services/international-shipping",
+    btnLink: "/services/shipping",
     btnText: "Learn More",
     imgSrc: "/assets/portfolio/30.jpg",
     imgAlt: "International Shipping",
@@ -210,7 +211,7 @@ export const servicesData: Service[] = [
     description:
       "We handle the transport of slug or iron waste, providing specialized services to manage and move these materials safely and efficiently.",
     bgColor: "text-gray-500",
-    btnLink: "/services/slug-iron-waste-transport",
+    btnLink: "/services/slug",
     btnText: "Learn More",
     imgSrc: "/assets/abt.jpg",
     imgAlt: "Slug or Iron Waste Transport",
@@ -497,3 +498,7 @@ export const whyCardData = [
     hoverBgColor: "group-hover:bg-green-100",
   },
 ];
+
+
+
+//services category details page

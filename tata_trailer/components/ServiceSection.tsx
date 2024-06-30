@@ -20,12 +20,12 @@ const ServiceSection: React.FC = () => {
               index % 2 === 0 ? "md:flex-row-reverse" : ""
             } items-center`}
           >
-            <div className="md:w-1/2 p-6 h-[80vh] relative">
+            <div className=" w-full md:w-1/2 p-6 h-[80vh] relative">
               <Image
                 src={service.imgSrc}
                 alt={service.imgAlt}
                 fill
-                className="w-full  rounded-lg"
+                className="w-full rounded-lg"
                 loading="lazy"
                 objectFit="cover"
               />
