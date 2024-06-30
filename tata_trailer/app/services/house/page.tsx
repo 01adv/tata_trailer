@@ -45,6 +45,7 @@ const page = () => {
           alt="Services Background"
           layout="fill"
           objectFit="cover"
+          loading="lazy"
           quality={100}
           className="z-0"
         />
