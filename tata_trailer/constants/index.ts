@@ -61,7 +61,7 @@ export const serviceLinks = [
   { href: "/services/heavy", label: "Heavy Equipment Transport" },
   { href: "/services/customized", label: "Customized Logistics Services" },
   { href: "/services/agriculture", label: "Agriculture Equipment Transport" },
-  { href: "/services/gutter", label: "Gutter Channel Transport" },
+  { href: "/services/garter", label: "Garter Channel Transport" },
   { href: "/services/warehouse", label: "Warehouse Shifting" },
   { href: "/services/house", label: "House Shifting" },
   { href: "/services/shipping", label: "International Shipping" },
