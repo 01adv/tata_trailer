@@ -67,9 +67,8 @@ const Navbar2 = () => {
     <header className="fixed w-full z-50">
       <div className="block">
         <div
-          className={`transition-all duration-300  px-4 md:px-12 py-2 flex justify-between items-center ${
-            isScrolled ? "hidden" : "block bg-black/70"
-          }`}
+          className={`transition-all duration-300  px-4 md:px-12 py-2 flex justify-between items-center ${isScrolled ? "hidden" : "block bg-black/70"
+            }`}
         >
           <div className="w-full flex md:flex-row md:items-center justify-end md:space-x-8 text-sm font-mono tracking-tighter  space-x-4 text-black/70">
             <Link href={"/contact/#map"} className="flex gap-1 ">
@@ -81,15 +80,15 @@ const Navbar2 = () => {
             </Link>
 
             <Link href="tel:+919761303561" className=" flex gap-1 ">
-              <PhoneCall size={18}  color="white"/>
-              <p className="hidden md:block text-white">+91 9761 303561</p>
+              <PhoneCall size={18} color="white" />
+              <p className="hidden md:block text-white">+91 9639 658534</p>
             </Link>
 
             <Link
               href="mailto:tata.trailor.service@gmail.com"
               className=" flex gap-1"
             >
-              <Mail size={18} fill="red" color="white"/>
+              <Mail size={18} fill="red" color="white" />
               <p className="hidden md:block text-white">
                 tata.trailor.service@gmail.com
               </p>
@@ -99,11 +98,10 @@ const Navbar2 = () => {
       </div>
 
       <div
-        className={`flex justify-between items-center px-4 md:px-12 transition-all duration-300 ${
-          isScrolled
-            ? "h-16 glassmorphism-nav bg-green-200"
-            : "h-20 bg-transparent text-white"
-        }`}
+        className={`flex justify-between items-center px-4 md:px-12 transition-all duration-300 ${isScrolled
+          ? "h-16 glassmorphism-nav bg-green-200"
+          : "h-20 bg-transparent text-white"
+          }`}
       >
         <Link href="/">
           <h1
@@ -111,7 +109,7 @@ const Navbar2 = () => {
           >
             <span className="text-green-500">TATA</span>{" "}
             <span className="text-orange-400">TRAILOR</span>
-            <br  />
+            <br />
             <span className="font-mono text-sm">Service and Transport &reg;</span>
 
           </h1>
@@ -128,10 +126,9 @@ const Navbar2 = () => {
             className={`fixed left-0 right-0 min-h-screen flex flex-col justify-start items-start space-y-4 p-4 
               
               
-              transform transition-transform duration-300 ${
-                open
-                  ? "translate-x-0 bg-gray-100 text-black"
-                  : "-translate-x-full"
+              transform transition-transform duration-300 ${open
+                ? "translate-x-0 bg-gray-100 text-black"
+                : "-translate-x-full"
               } md:relative md:flex md:flex-row md:min-h-0 md:space-y-0 md:space-x-6 md:p-0 md:translate-x-0 text-lg`}
           >
             {navItems.map((item, index) => {

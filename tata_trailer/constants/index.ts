@@ -10,34 +10,35 @@ import {
 //testimonials
 export const testimonials = [
   {
-    title: "Outstanding Service and Reliability",
+    title: "Reliable Logistics for Manufacturing Needs",
     content:
-      "Tata Trailor Logistics has provided us with unparalleled service, ensuring our goods are delivered on time, every time.",
-    name: "John Doe",
-    designation: "Operations Manager at XYZ Manufacturing",
+      "Tata Trailer Service and Transport has been a reliable partner in ensuring the seamless movement of our raw materials and finished goods.",
+    name: "Rajesh Gupta",
+    designation: "Plant Manager",
   },
   {
-    title: "Exceptional Efficiency",
+    title: "Efficiency at Its Best",
     content:
-      "The efficiency and professionalism of Tata Trailor Logistics have significantly improved our supply chain operations.",
-    name: "Jane Smith",
-    designation: "Supply Chain Director at ABC Retail",
+      "Their timely delivery and efficient handling of ODC consignments have streamlined our operations significantly.",
+    name: "Meena Sharma",
+    designation: "Logistics Head ",
   },
   {
-    title: "Reliable and Cost-Effective",
+    title: "Cost-Effective and Trustworthy",
     content:
-      "Tata Trailor Logistics offers reliable and cost-effective solutions, making them our preferred logistics partner.",
-    name: "Michael Brown",
-    designation: "CEO at Global Logistics Inc.",
+      "We rely on Tata Trailer Service for their cost-effective solutions and dependable service in handling bulk cargo.",
+    name: "Vikram Chauhan",
+    designation: "Supply Chain Manager ",
   },
   {
-    title: "Innovative and Dependable",
+    title: "Exceptional Support for Large-Scale Operations",
     content:
-      "Their innovative solutions and dependable service have been instrumental in our company growth.",
-    name: "Emily Davis",
-    designation: "COO at Tech Distributors Ltd.",
+      "Their expertise in managing heavy and oversized consignments has been crucial for our production schedules.",
+    name: "Anjali Verma",
+    designation: "Operations Manager ",
   },
 ];
+
 //testimonials ends here
 
 // footer
@@ -152,14 +153,14 @@ export const servicesData: Service[] = [
 
   {
     icon: TruckIcon, // Replace with appropriate icon
-    title: "Gutter Channel Transport",
+    title: "Garter Channel Transport",
     description:
-      "Our services include the transport of gutter channels, providing secure and efficient logistics solutions for these critical components.",
+      "Our services include the transport of garter channels, providing secure and efficient logistics solutions for these critical components.",
     bgColor: "text-yellow-500",
-    btnLink: "/services/gutter",
+    btnLink: "/services/garter",
     btnText: "Learn More",
     imgSrc: "/assets/portfolio/23.jpeg",
-    imgAlt: "Gutter Channel Transport",
+    imgAlt: "Garter Channel Transport",
   },
   {
     icon: TruckIcon, // Replace with appropriate icon
@@ -229,7 +230,7 @@ interface Contact {
     second?: string;
     third?: string;
     fourth?: string;
-
+    fifth?: string;
   };
 }
 
@@ -244,18 +245,19 @@ export const contactCardsData: Contact[] = [
   {
     icon: MapPinIcon,
     description: {
-      first: "Near Hazi Parking, Opp: Mahindra & Mahindra Ltd Kichha Road Lalpur Rudrapur 263148",
+      first:
+        "Near Hazi Parking, Opp: Mahindra & Mahindra Ltd Kichha Road Lalpur Rudrapur 263148",
     },
   },
   {
     icon: PhoneCall,
 
     description: {
-      first:
-        "9761303561,",
+      first: "9639658534,",
       second: "9058206080,",
       third: "8375964014,",
-      fourth: "9761999097"
+      fourth: "9761999097",
+      fifth: "9639658534",
     },
   },
 ];
@@ -313,6 +315,11 @@ export const serviceCardData = [
 
 export const FaqData = [
   {
+    question: "What regions does Tata Trailor operates in?",
+    answer:
+      "Tata Trailor is specializing in transporting heavy-load ODC materials across India and neighboring nations like Bhutan, Nepal, Bangladesh, and others with unmatched reliability and efficiency.",
+  },
+  {
     question: "What services does Tata Trailor offer?",
     answer:
       "Tata Trailor provides a comprehensive range of transport and logistics services including freight transportation, warehousing, distribution, supply chain management, and specialized transport solutions for oversized or hazardous materials.",
@@ -340,17 +347,17 @@ export const FaqData = [
   {
     question: "How can I track my shipment with Tata Trailor?",
     answer:
-      "You can easily track your shipment with Tata Trailor using our online tracking system. Simply enter your tracking number on our website to get real-time updates on the status and location of your shipment. You can also contact our customer service team for assistance.",
+      "You can easily track your shipment with Tata Trailor using online tracking system. Simply enter your tracking number on the tracking website to get real-time updates on the status and location of your shipment. You can also contact our customer service team for assistance.",
   },
   {
     question: "What payment methods does Tata Trailor accept?",
     answer:
-      "Tata Trailor accepts a variety of payment methods for your convenience. You can pay using credit cards, debit cards, bank transfers, and online payment platforms. For corporate clients, we also offer invoicing and credit terms upon approval.",
+      "Tata Trailor accepts a variety of payment methods for your convenience. You can pay using bank transfers, UPI, and online payment platforms. For corporate clients, we also offer invoicing and credit terms upon approval.",
   },
   {
     question: "How can I contact Tata Trailor for customer support?",
     answer:
-      "Our customer support team is available to assist you with any questions or concerns. You can reach us by phone at [+91 9761 303561], email at [tata.trailor.service@gmail.com], or through our website's contact form. We are committed to providing prompt and efficient support to all our clients.",
+      "Our customer support team is available to assist you with any questions or concerns. You can reach us by phone at [+91 9639 658534], email at [tata.trailor.service@gmail.com], or through our website's contact form. We are committed to providing prompt and efficient support to all our clients.",
   },
 ];
 
@@ -498,7 +505,5 @@ export const whyCardData = [
     hoverBgColor: "group-hover:bg-green-100",
   },
 ];
-
-
 
 //services category details page

@@ -44,11 +44,9 @@ const Page = () => {
               <card.icon className="mb-2 text-2xl text-orange-600 group-hover:text-white transition-colors relative z-10 duration-300" />
               <div className="font-semibold">
                 <p className="text-slate-700 group-hover:text-gray-800 relative z-10 duration-300">
-                  {`${card.description.first}\n${
-                    card.description.second ?? ""
-                  }\n${card.description.third ?? ""}\n${
-                    card.description.fourth ?? ""
-                  }`}
+                  {`${card.description.first}\n${card.description.second ?? ""
+                    }\n${card.description.third ?? ""}\n${card.description.fourth ?? ""
+                    }\n${card.description.fifth ?? ""}`}
                 </p>
               </div>
             </div>
@@ -56,11 +54,11 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="w-full h-[60vh] my-32" id="map">
+      <div className="w-full h-[70vh] mt-32" id="map">
         <iframe
           title="Map"
           className="w-full h-full"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3491.6200143634856!2d79.45857457558438!3d28.93932927549863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a07e9988119629%3A0xbd39e4d2aaa29e0d!2sTATA%20TRAILOR%20SERVICE!5e0!3m2!1sen!2sin!4v1718699302767!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1032.0513674345682!2d79.46532158812622!3d28.936424759740206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a07e9988119629%3A0xbd39e4d2aaa29e0d!2sTATA%20TRAILOR%20SERVICE!5e1!3m2!1sen!2sin!4v1736198047427!5m2!1sen!2sin"
           allowFullScreen
           loading="lazy"
         ></iframe>

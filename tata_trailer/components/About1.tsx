@@ -14,7 +14,7 @@ const About1 = () => {
       <animated.div
         ref={refMove}
         style={animationPropsMove}
-        className="overflow-hidden pb-12 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-dark"
+        className="overflow-hidden pb-12 lg:pt-[90px] lg:pb-[90px] bg-white dark:bg-dark"
       >
         {/* <div className="container mx-auto">
           <div className="flex flex-wrap items-center justify-between -mx-4">
@@ -76,7 +76,7 @@ const About1 = () => {
             </div>
           </div>
         </div> */}
-        <AboutComp/>
+        <AboutComp />
       </animated.div>
     </>
   );

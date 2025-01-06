@@ -1,6 +1,6 @@
 const content = [
   {
-    title: "Tata Trailer Gutter Channel Transport Services",
+    title: "Tata Trailer Garter Channel Transport Services",
     description: (
       <>
         <p>
@@ -52,7 +52,7 @@ const page = () => {
         <div className="absolute inset-0 bg-black/40 backdrop-blur-sm "> </div>
         <div className="absolute inset-0 flex flex-col items-center justify-center">
           <h2 className="font-semibold text-4xl sm:6xl md:text-8xl text-white text-center">
-            Gutter Channel Transport
+            Garter Channel Transport
           </h2>
           <p className="font-medium text-orange-500 text-center">
             Innovative Logistic Services
