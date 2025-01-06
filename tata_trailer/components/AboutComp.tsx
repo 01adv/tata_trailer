@@ -59,11 +59,11 @@ const AboutComp = () => {
                   India&apos;s Leading Contract Logistics Provider
                 </h2>
                 <p className="">
-                  Tata Trailer Service and Transport, established over a decade
+                  Tata Trailor Service and Transport, established over a decade
                   ago, is a renowned name in the logistics and transport
                   industry in India. As fleet owners and transport contractors,
                   we specialize in carrying heavy-load ODC (Over Dimensional
-                  Cargo) materials using open flat frame trucks and trailers.
+                  Cargo) materials using open flat frame trucks and trailors.
                   Our services are available nationwide, operating on any road,
                   at any time, and to any location in India.
                 </p>
@@ -75,14 +75,14 @@ const AboutComp = () => {
                   cargo, ensuring timely delivery and customer satisfaction.
                 </p>
                 <p className="mt-4">
-                  Our services extend beyond transportation; we offer trailer
+                  Our services extend beyond transportation; we offer trailor
                   services, ensuring that your goods are delivered securely and
                   efficiently. With a focus on safety and reliability, we
                   provide comprehensive solutions for transporting goods of all
                   sizes and types.
                 </p>
                 <p className="mt-4">
-                  Tata Trailer Service and Transport is committed to delivering
+                  Tata Trailor Service and Transport is committed to delivering
                   superior service and solutions tailored to meet the unique
                   needs of each customer. Whether it is a one-time shipment or
                   ongoing logistics support, we are dedicated to exceeding your

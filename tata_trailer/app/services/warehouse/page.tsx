@@ -1,10 +1,10 @@
 const content = [
   {
-    title: "Tata Trailer Warehouse Shifting Services",
+    title: "Tata Trailor Warehouse Shifting Services",
     description: (
       <>
         <p>
-          Tata Trailer Warehouse Shifting Services specializes in the efficient
+          Tata Trailor Warehouse Shifting Services specializes in the efficient
           and seamless relocation of warehouses. Whether you are moving to a
           larger facility or a new location, our experienced team and modern
           fleet ensure that your inventory and equipment are transported safely
@@ -21,7 +21,7 @@ const content = [
         </p>
         <br />
         <p>
-          With years of experience in the logistics industry, Tata Trailer is
+          With years of experience in the logistics industry, Tata Trailor is
           your trusted partner for all your warehouse shifting needs. Our team
           of skilled professionals is dedicated to providing personalized
           service and support, ensuring a smooth and stress-free relocation

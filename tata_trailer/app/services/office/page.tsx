@@ -1,10 +1,10 @@
 const content = [
   {
-    title: "Tata Trailer Office Moving Services",
+    title: "Tata Trailor Office Moving Services",
     description: (
       <>
         <p>
-          Tata Trailer Office Moving Services specializes in the efficient and
+          Tata Trailor Office Moving Services specializes in the efficient and
           seamless relocation of office spaces. Whether you are moving to a new
           building across town or relocating to a different city, our
           experienced team and modern fleet ensure that your office equipment
@@ -20,7 +20,7 @@ const content = [
         </p>
         <br />
         <p>
-          With years of experience in the logistics industry, Tata Trailer is
+          With years of experience in the logistics industry, Tata Trailor is
           your trusted partner for all your office moving needs. Our team of
           skilled professionals is dedicated to providing personalized service
           and support, ensuring a smooth and stress-free relocation experience

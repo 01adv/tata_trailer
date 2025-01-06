@@ -47,7 +47,7 @@ const Service1 = () => {
                 </li>
                 <li className="text-gray-700 font-semibold mb-2">
                   <span className="font-bold text-2xl text-green-600">•</span> We have
-                  stable capacities (trucks & trailers) and dedicated resources
+                  stable capacities (trucks & trailors) and dedicated resources
                 </li>
                 <li className="text-gray-700 font-semibold">
                   <span className="font-bold text-2xl text-green-600">•</span> Low-carbon

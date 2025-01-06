@@ -1,10 +1,10 @@
 const content = [
   {
-    title: "Tata Trailer Customized Logistics Services",
+    title: "Tata Trailor Customized Logistics Services",
     description: (
       <>
         <p>
-          Tata Trailer Industrial Machinery Transport Services offers a
+          Tata Trailor Industrial Machinery Transport Services offers a
           comprehensive solution for transporting heavy industrial machinery via
           road. Our fleet of state-of-the-art trailers and robust vehicles
           ensures the safe and efficient movement of machinery, regardless of
@@ -21,7 +21,7 @@ const content = [
         </p>
         <br />
         <p>
-          With extensive experience in the logistics sector, Tata Trailer is
+          With extensive experience in the logistics sector, Tata Trailor is
           your reliable partner for all your heavy transport needs. Our expert
           team is committed to delivering personalized service and comprehensive
           support, ensuring a seamless and hassle-free transport experience from

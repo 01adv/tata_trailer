@@ -1,12 +1,12 @@
 const content = [
   {
-    title: "Tata Trailer Agriculture Equipment Transport Services",
+    title: "Tata Trailor Agriculture Equipment Transport Services",
     description: (
       <>
         <p>
-          Tata Trailer Agricultural Equipment Transport Services specializes in
+          Tata Trailor Agricultural Equipment Transport Services specializes in
           the logistics and transportation of heavy agricultural machinery via
-          road. Our extensive fleet of modern trailers and heavy-duty vehicles
+          road. Our extensive fleet of modern trailors and heavy-duty vehicles
           ensures that we can handle the transport of machinery of all sizes and
           weights with utmost efficiency and safety.
         </p>
@@ -20,7 +20,7 @@ const content = [
         </p>
         <br />
         <p>
-          With years of experience in the logistics industry, Tata Trailer is
+          With years of experience in the logistics industry, Tata Trailor is
           your trusted partner for all your agricultural transport needs. Our
           team of skilled professionals is dedicated to providing personalized
           service and support, ensuring a seamless transport experience from

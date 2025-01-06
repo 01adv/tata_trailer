@@ -3,7 +3,7 @@ import React from "react";
 import useScrollAnimation from "@/hooks/useScrollAnimation";
 import { animated } from "react-spring";
 
-const AboutTataTrailer = () => {
+const AboutTataTrailor = () => {
   const { ref: refMove, animationProps: animationPropsMove } =
     useScrollAnimation("move");
 
@@ -14,7 +14,7 @@ const AboutTataTrailer = () => {
           <div className="mx-auto max-w-2xl lg:max-w-none">
             <div className="text-center">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Tata Trailer Service and Transport
+                Tata Trailor Service and Transport
               </h2>
               <p className="mt-4 text-lg leading-8 text-gray-600">
                 A trusted name in logistics, specializing in transporting heavy-load ODC materials across India and neighboring nations like Bhutan, Nepal, Bangladesh, and others with unmatched reliability and efficiency.
@@ -61,4 +61,4 @@ const AboutTataTrailer = () => {
   );
 };
 
-export default AboutTataTrailer;
+export default AboutTataTrailor;

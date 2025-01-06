@@ -12,7 +12,7 @@ export const testimonials = [
   {
     title: "Reliable Logistics for Manufacturing Needs",
     content:
-      "Tata Trailer Service and Transport has been a reliable partner in ensuring the seamless movement of our raw materials and finished goods.",
+      "Tata Trailor Service and Transport has been a reliable partner in ensuring the seamless movement of our raw materials and finished goods.",
     name: "Rajesh Gupta",
     designation: "Plant Manager",
   },
@@ -26,7 +26,7 @@ export const testimonials = [
   {
     title: "Cost-Effective and Trustworthy",
     content:
-      "We rely on Tata Trailer Service for their cost-effective solutions and dependable service in handling bulk cargo.",
+      "We rely on Tata Trailor Service for their cost-effective solutions and dependable service in handling bulk cargo.",
     name: "Vikram Chauhan",
     designation: "Supply Chain Manager ",
   },

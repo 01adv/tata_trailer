@@ -1,10 +1,10 @@
 const content = [
   {
-    title: "Tata Trailer Slug Management Services",
+    title: "Tata Trailor Slug Management Services",
     description: (
       <>
         <p>
-          Tata Trailer Industrial Machinery Transport Services specializes in
+          Tata Trailor Industrial Machinery Transport Services specializes in
           the logistics and transportation of heavy industrial machinery via
           road. Our extensive fleet of modern trailers and heavy-duty vehicles
           ensures that we can handle the transport of machinery of all sizes and
@@ -20,7 +20,7 @@ const content = [
         </p>
         <br />
         <p>
-          With years of experience in the logistics industry, Tata Trailer is
+          With years of experience in the logistics industry, Tata Trailor is
           your trusted partner for all your heavy transport needs. Our team of
           skilled professionals is dedicated to providing personalized service
           and support, ensuring a seamless transport experience from start to

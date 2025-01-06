@@ -1,10 +1,10 @@
 const content = [
   {
-    title: "Tata Trailer House Shifting Services",
+    title: "Tata Trailor House Shifting Services",
     description: (
       <>
         <p>
-          Tata Trailer House Shifting Services specializes in the seamless and
+          Tata Trailor House Shifting Services specializes in the seamless and
           efficient relocation of homes. Whether you are moving across town or
           to a new city, our experienced team and modern fleet ensure that your
           belongings are transported safely and securely.
@@ -19,7 +19,7 @@ const content = [
         </p>
         <br />
         <p>
-          With years of experience in the logistics industry, Tata Trailer is
+          With years of experience in the logistics industry, Tata Trailor is
           your trusted partner for all your house shifting needs. Our team of
           skilled professionals is dedicated to providing personalized service
           and support, ensuring a stress-free and smooth relocation experience
