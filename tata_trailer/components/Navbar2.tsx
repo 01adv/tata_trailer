@@ -13,6 +13,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState, useEffect } from "react";
 import { Button } from "./ui/button";
+import Image from "next/image";
 
 const Navbar2 = () => {
   const [open, setOpen] = useState(false);
@@ -103,7 +104,8 @@ const Navbar2 = () => {
           : "h-20 bg-transparent text-white"
           }`}
       >
-        <Link href="/">
+        <Link href="/" className="flex items-center gap-1">
+          <Image src="/assets/logo.png" alt="Tata Trailor" width={60} height={80} />
           <h1
             className={`font-extrabold ${isScrolled ? "text-xl" : "text-2xl"}  leading-5`}
           >
