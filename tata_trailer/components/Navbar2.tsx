@@ -105,7 +105,7 @@ const Navbar2 = () => {
           }`}
       >
         <Link href="/" className="flex items-center gap-1">
-          <Image src="/assets/logo.png" alt="Tata Trailor" width={60} height={80} />
+          <Image src="/logo.png" alt="Tata Trailor" width={60} height={80} />
           <h1
             className={`font-extrabold ${isScrolled ? "text-xl" : "text-2xl"}  leading-5`}
           >

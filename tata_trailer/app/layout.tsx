@@ -75,7 +75,7 @@ export default function RootLayout({
 
         {/* Favicon */}
         {/* Uncomment and replace the href below with the actual favicon URL */}
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <link rel="icon" href="/favicon.ico" />
 
         {/* Commented Placeholder for Social Media Links */}
         {/* Example: Add your Facebook, Twitter, or LinkedIn profile links here */}
